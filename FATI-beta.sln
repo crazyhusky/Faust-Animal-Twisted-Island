@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FATI-beta", "FATI-beta\FATI-beta.csproj", "{512327D8-E49E-412B-B6FA-E461260669D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{512327D8-E49E-412B-B6FA-E461260669D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512327D8-E49E-412B-B6FA-E461260669D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512327D8-E49E-412B-B6FA-E461260669D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512327D8-E49E-412B-B6FA-E461260669D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DDC9F62-CDFA-4712-BB2E-7245AAE5FA55}
+	EndGlobalSection
+EndGlobal
