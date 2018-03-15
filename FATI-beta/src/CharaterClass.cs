@@ -3,7 +3,7 @@ namespace FATI_beta.src
 {
     public class CharaterClass : MainGameObject
     {
-        protected int health;
+        protected float health;
         public CharaterClass()
         {
         }
