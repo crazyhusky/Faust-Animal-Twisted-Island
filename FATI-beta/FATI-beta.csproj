@@ -59,6 +59,7 @@
     <Compile Include="src\PlayerClass.cs" />
     <Compile Include="src\ItemClass.cs" />
     <Compile Include="src\CharaterClass.cs" />
+    <Compile Include="src\MutationClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
