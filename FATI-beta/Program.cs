@@ -72,10 +72,7 @@ namespace FATI_beta
                 {
                     filesystemLink.Mount(file, "", false);
                 }
-                catch (PhysFS.PhysFSException e)
-                {
-                    //Console.WriteLine(e);
-                }
+                catch (PhysFS.PhysFSException){}
             }
         }
         static void RunWindow()
