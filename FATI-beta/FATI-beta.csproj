@@ -64,7 +64,7 @@
     <None Include="libphysfs.dylib">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="libphysfs.dll">
+    <None Include="libphysfs.x64.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -74,7 +74,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\" />
     <Folder Include="GameData\" />
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +81,11 @@
       <Project>{AD6AA182-8C7F-4F3A-AAEF-7BD993D1D262}</Project>
       <Name>SharpPhysFS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libphysfs.x86.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
