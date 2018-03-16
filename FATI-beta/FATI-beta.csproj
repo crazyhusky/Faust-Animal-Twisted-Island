@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\EventClass.cs" />
+    <Compile Include="src\LocationClass.cs" />
     <Compile Include="TestFormX.cs">
       <SubType>Form</SubType>
     </Compile>
