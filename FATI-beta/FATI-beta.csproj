@@ -47,6 +47,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\JsonClasses\EventClass.cs" />
     <Compile Include="src\JsonClasses\LocationClass.cs" />
+    <Compile Include="src\Mechanics\AssetLoading.cs" />
+    <Compile Include="src\Mechanics\JsonMapping.cs" />
     <Compile Include="TestFormX.cs">
       <SubType>Form</SubType>
     </Compile>
