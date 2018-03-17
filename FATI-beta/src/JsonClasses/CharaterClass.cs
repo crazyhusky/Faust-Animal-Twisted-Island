@@ -1,5 +1,4 @@
-﻿using System;
-namespace FATI_beta.src
+﻿namespace FATI_beta.JsonClasses
 {
     public class CharaterClass : MainGameObject
     {
