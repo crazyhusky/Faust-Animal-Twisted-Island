@@ -1,12 +1,12 @@
 ﻿namespace FATI_beta.JsonClasses
 {
-    public class MutationClass : MainGameObject
+    public class TransformationBook : MainGameObject
     {
         protected string TransformationText;
-        protected float Percentage;
+        protected float Probability;
         protected string BodyPart;
         protected string NewBodyPartDescription;
-        public MutationClass()
+        public TransformationBook()
         {
         }
     }
