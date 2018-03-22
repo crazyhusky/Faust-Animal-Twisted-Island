@@ -1,6 +1,6 @@
 ﻿namespace FATI_beta.JsonClasses
 {
-    public class LocationClass : MainGameObject
+    public class Location: MainGameObject
     {
         protected LocationConnections[] Connections;
         protected int UnlockLevel;
