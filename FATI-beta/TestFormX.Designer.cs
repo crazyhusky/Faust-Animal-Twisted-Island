@@ -206,6 +206,7 @@
             this.btnOptions.TabIndex = 18;
             this.btnOptions.Text = "Options";
             this.btnOptions.UseVisualStyleBackColor = false;
+            this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
             // 
             // btnNewGame
             // 
@@ -219,6 +220,7 @@
             this.btnNewGame.TabIndex = 17;
             this.btnNewGame.Text = "New Game";
             this.btnNewGame.UseVisualStyleBackColor = false;
+            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
             // 
             // btnLoad
             // 
@@ -232,6 +234,7 @@
             this.btnLoad.TabIndex = 16;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnSave
             // 
@@ -245,6 +248,7 @@
             this.btnSave.TabIndex = 15;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // buttonCmd5
             // 

@@ -15,25 +15,9 @@ namespace FATI_beta
         [STAThread]
         static void Main(string[] args)
         {
-            //FileSystemTests();
             GameInit();
             RunWindow();
-            Console.WriteLine("\n");
             GameDeInit();
-        }
-
-        private static void FileSystemTests()
-        {
-            //Filesystem Test
-            using (var pfs = new PhysFS(""))
-            {
-                pfs.Mount(Environment.CurrentDirectory, "", true);
-                using (var reader = new StreamReader(pfs.OpenRead("/helloworld.txt")))
-                {
-                    var contents = reader.ReadToEnd();
-                    Console.WriteLine(contents);
-                }
-            }
         }
 
         static void GameInit()

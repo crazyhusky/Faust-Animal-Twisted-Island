@@ -31,5 +31,25 @@ namespace FATI_beta
         {
 
         }
+
+        private void btnNewGame_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOptions_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

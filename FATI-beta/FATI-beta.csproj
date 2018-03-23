@@ -88,7 +88,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GameData\" />
     <Folder Include="src\UI\" />
   </ItemGroup>
   <ItemGroup>
