@@ -11,15 +11,18 @@ namespace FATI_beta.Mechanics
 {
     class AssetLoading
     {
-        public static void LoadFiles(PhysFS physFSInstance, JsonMapping Maps) {
-            LoadBodyParts(physFSInstance,Maps);
+        public static void LoadFiles(PhysFS physFSInstance, JsonMapping Maps)
+        {
+            LoadBodyParts(physFSInstance, Maps);
         }
 
-        public static void LoadBodyParts(PhysFS physFSInstance,JsonMapping Maps) {
+        public static void LoadBodyParts(PhysFS physFSInstance, JsonMapping Maps)
+        {
             var BodyPartFileList = physFSInstance.EnumerateFiles("bodyparts");
-            foreach (var file in BodyPartFileList) {
+            foreach (var file in BodyPartFileList)
+            {
                 var filepath = "bodyparts" + "/" + file;
-                var bodypart =DeserializeJsonFile<JsonClasses.BodyPartBaseClass>(physFSInstance,filepath);
+                var bodypart = DeserializeJsonFile<JsonClasses.BodyPartBaseClass>(physFSInstance, filepath);
                 Maps.BodyParts.Add(bodypart.PartType, bodypart);
             }
         }
@@ -32,7 +35,8 @@ namespace FATI_beta.Mechanics
                 return ser.Deserialize<T>(jsonReader);
             }
         }
-        public static T DeserializeJsonFile<T>(PhysFS physFSInstance,string filepath) {
+        public static T DeserializeJsonFile<T>(PhysFS physFSInstance, string filepath)
+        {
             var filedata = physFSInstance.OpenRead(filepath);
             var jsonObject = DeserializeJsonFileData<T>(filedata);
             return jsonObject;
