@@ -10,15 +10,14 @@ namespace FATI_beta
 {
     class Program
     {
-        protected static PhysFS filesystemLink;
+        protected static Mechanics.MainGameController MainGame;
         [STAThread]
         static void Main(string[] args)
         {
             //FileSystemTests();
             GameInit();
-            //RunWindow();
+            RunWindow();
             Console.WriteLine("\n");
-            Console.WriteLine(string.Join("\n",filesystemLink.EnumerateFiles("/")));
             GameDeInit();
         }
 
@@ -38,47 +37,12 @@ namespace FATI_beta
 
         static void GameInit()
         {
-            filesystemLink = new PhysFS("");
-            SetupFileSystems();
-            Mechanics.AssetLoading.LoadFiles(filesystemLink);
+            MainGame = new Mechanics.MainGameController();
         }
 
         static void GameDeInit()
         {
-            filesystemLink.Deinit();
-        }
-
-        static void SetupFileSystems()
-        {
-            var seporator = filesystemLink.GetDirSeparator();
-            var BaseDataDir = Environment.CurrentDirectory + seporator + "GameData";
-            var UnPackedData = BaseDataDir + seporator + "Unpacked";
-            var Packed = BaseDataDir + seporator + "Packed";
-            var saveData = BaseDataDir + seporator + "SaveData";
-
-            filesystemLink.PermitSymbolicLinks(true);
-            Directory.CreateDirectory(BaseDataDir);
-            Directory.CreateDirectory(UnPackedData);
-            Directory.CreateDirectory(Packed);
-            Directory.CreateDirectory(saveData);
-            filesystemLink.SetWriteDir(saveData);
-            filesystemLink.Mount(UnPackedData, "", true);
-            SetupPackedData(Packed);
-
-        }
-
-        static void SetupPackedData(string baseDir)
-        {
-            //get all files in alphabetic order
-            var sorted = Directory.GetFiles(baseDir).OrderBy(f => f);
-            foreach (var file in sorted)
-            {
-                try
-                {
-                    filesystemLink.Mount(file, "", false);
-                }
-                catch (PhysFS.PhysFSException){}
-            }
+            MainGame.Dispose();
         }
         static void RunWindow()
         {

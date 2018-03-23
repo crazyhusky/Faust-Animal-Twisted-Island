@@ -67,6 +67,7 @@
     <Compile Include="src\JsonClasses\BodyPartBaseClass.cs" />
     <Compile Include="src\JsonClasses\TransformationLibrary.cs" />
     <Compile Include="src\JsonClasses\EnemyClass.cs" />
+    <Compile Include="src\Mechanics\MainGameController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -4,13 +4,23 @@ namespace FATI_beta.Mechanics
 {
     public class JsonMapping
     {
-        protected Dictionary<string,NPCClass> NPCList;
-        protected Dictionary<string,Location> Locations;
-        protected Dictionary<string,ItemClass> Items;
-        protected Dictionary<string,TransformationBook> TransformationBooks;
-        protected Dictionary<string,TransformationLibrary> TransformationLibraries;
-        protected Dictionary<string,EnemyClass> Enemies;
-        protected Dictionary<string,EventClass> Events;
-        protected PlayerClass BasePlayer;
+        public Dictionary<string,NPCClass> NPCList;
+        public Dictionary<string,Location> Locations;
+        public Dictionary<string,ItemClass> Items;
+        public Dictionary<string,TransformationBook> TransformationBooks;
+        public Dictionary<string,TransformationLibrary> TransformationLibraries;
+        public Dictionary<string,EnemyClass> Enemies;
+        public Dictionary<string,EventClass> Events;
+        public Dictionary<string, BodyPartBaseClass> BodyParts;
+        public PlayerClass BasePlayer;
+        public JsonMapping() {
+            NPCList = new Dictionary<string, NPCClass>();
+            Locations = new Dictionary<string, Location>();
+            Items = new Dictionary<string, ItemClass>();
+            TransformationBooks = new Dictionary<string, TransformationBook>();
+            TransformationLibraries = new Dictionary<string, TransformationLibrary>();
+            Enemies = new Dictionary<string, EnemyClass>();
+            BodyParts = new Dictionary<string, BodyPartBaseClass>();
+        }
     }
 }
