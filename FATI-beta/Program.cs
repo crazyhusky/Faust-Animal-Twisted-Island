@@ -40,6 +40,7 @@ namespace FATI_beta
         {
             filesystemLink = new PhysFS("");
             SetupFileSystems();
+            Mechanics.AssetLoading.LoadFiles(filesystemLink);
         }
 
         static void GameDeInit()
