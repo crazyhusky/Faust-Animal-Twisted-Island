@@ -27,7 +27,7 @@ namespace FATI_beta
             //Filesystem Test
             using (var pfs = new PhysFS(""))
             {
-                pfs.Mount(System.Environment.CurrentDirectory, "", true);
+                pfs.Mount(Environment.CurrentDirectory, "", true);
                 using (var reader = new StreamReader(pfs.OpenRead("/helloworld.txt")))
                 {
                     var contents = reader.ReadToEnd();
@@ -55,7 +55,11 @@ namespace FATI_beta
             var UnPackedData = BaseDataDir + seporator + "Unpacked";
             var Packed = BaseDataDir + seporator + "Packed";
             var saveData = BaseDataDir + seporator + "SaveData";
+
             filesystemLink.PermitSymbolicLinks(true);
+            Directory.CreateDirectory(BaseDataDir);
+            Directory.CreateDirectory(UnPackedData);
+            Directory.CreateDirectory(Packed);
             Directory.CreateDirectory(saveData);
             filesystemLink.SetWriteDir(saveData);
             filesystemLink.Mount(UnPackedData, "", true);
