@@ -10,6 +10,8 @@
     <AssemblyName>FATI-beta</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,18 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GioSharp, Version=3.22.24.34, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>libs\GioSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="GLibSharp, Version=3.22.24.34, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>libs\GLibSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="GtkSharp, Version=3.22.24.34, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>libs\GtkSharp.dll</HintPath>
-    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -64,7 +55,6 @@
     <Compile Include="src\JsonClasses\Location.cs" />
     <Compile Include="src\Mechanics\AssetLoading.cs" />
     <Compile Include="src\Mechanics\JsonMapping.cs" />
-    <Compile Include="src\UI\GtkUI.cs" />
     <Compile Include="TestFormX.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GameData\" />
+    <Folder Include="src\UI\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharpPhysFS\SharpPhysFS\SharpPhysFS.csproj">
@@ -109,11 +100,6 @@
   <ItemGroup>
     <Content Include="libphysfs.x86.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="libs\GioSharp.dll" />
-    <Content Include="libs\GLibSharp.dll" />
-    <Content Include="libs\GtkSharp.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
