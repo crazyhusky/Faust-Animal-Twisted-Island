@@ -2,10 +2,13 @@
 {
     public class MainGameObject
     {
-        protected string Name;
-        protected string Description;
+        public string Name { get; set; }
+        public string Description { get; set; }
         public MainGameObject()
         {
+        }
+        public override string ToString() {
+            return Name +":"+ Description +":"+ GetType().Name;
         }
     }
 }
