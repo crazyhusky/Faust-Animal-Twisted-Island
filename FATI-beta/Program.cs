@@ -23,6 +23,8 @@ namespace FATI_beta
         static void GameInit()
         {
             MainGame = new Mechanics.MainGameController();
+            MainGame.SetupFileSystems();
+            MainGame.LoadAssets();
         }
 
         static void GameDeInit()
