@@ -28,6 +28,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GioSharp, Version=3.22.24.34, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\GioSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GLibSharp, Version=3.22.24.34, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\GLibSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GtkSharp, Version=3.22.24.34, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\GtkSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -52,6 +64,7 @@
     <Compile Include="src\JsonClasses\Location.cs" />
     <Compile Include="src\Mechanics\AssetLoading.cs" />
     <Compile Include="src\Mechanics\JsonMapping.cs" />
+    <Compile Include="src\UI\GtkUI.cs" />
     <Compile Include="TestFormX.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +109,11 @@
   <ItemGroup>
     <Content Include="libphysfs.x86.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libs\GioSharp.dll" />
+    <Content Include="libs\GLibSharp.dll" />
+    <Content Include="libs\GtkSharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
