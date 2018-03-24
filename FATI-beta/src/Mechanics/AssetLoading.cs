@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.IO.MemoryMappedFiles;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using FATI_beta.JsonClasses;
 using Newtonsoft.Json;
 using SharpPhysFS;
@@ -38,8 +34,8 @@ namespace FATI_beta.Mechanics
         }
         public static T DeserializeJsonFileData<T>(Stream s)
         {
-            using (StreamReader reader = new StreamReader(s))
-            using (JsonTextReader jsonReader = new JsonTextReader(reader))
+            using (var reader = new StreamReader(s))
+            using (var jsonReader = new JsonTextReader(reader))
             {
                 JsonSerializer ser = new JsonSerializer();
                 return ser.Deserialize<T>(jsonReader);

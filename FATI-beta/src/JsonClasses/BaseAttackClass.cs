@@ -2,6 +2,6 @@
 {
     public class BaseAttackClass : MainGameObject
     {
-        
+        protected float ProbabilityOfSuccess;
     }
 }
