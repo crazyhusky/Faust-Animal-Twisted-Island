@@ -15,6 +15,7 @@ namespace FATI_beta.Mechanics
     {
         public static void LoadFiles(PhysFS physFSInstance, JsonMapping Maps)
         {
+            LoadResource("attacks",physFSInstance,Maps.Attacks);
             LoadResource("bodyparts",physFSInstance,Maps.BodyParts);
             LoadResource("events", physFSInstance, Maps.Events);
             LoadResource("items", physFSInstance, Maps.Items);
@@ -23,6 +24,7 @@ namespace FATI_beta.Mechanics
             LoadResource("enemies", physFSInstance, Maps.Enemies);
             LoadResource("tfbooks", physFSInstance, Maps.TransformationBooks);
             LoadResource("tflibrary", physFSInstance, Maps.TransformationLibraries);
+
         }
         public static void LoadResource<T>(String filenameToEnum, PhysFS physFSInstance, Dictionary<string, T> MapDictionary) where T: MainGameObject, new()
         {

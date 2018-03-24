@@ -7,8 +7,8 @@ namespace FATI_beta.Mechanics
 {
     public class MainGameController : IDisposable
     {
-        protected JsonMapping DefinedParts;
-        protected PhysFS filesystemLink;
+        private JsonMapping DefinedParts;
+        private PhysFS filesystemLink;
         public MainGameController()
         {
             DefinedParts = new JsonMapping();
