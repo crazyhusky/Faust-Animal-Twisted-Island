@@ -21,6 +21,7 @@ namespace FATI_beta.Mechanics
             TransformationLibraries = new Dictionary<string, TransformationLibrary>();
             Enemies = new Dictionary<string, EnemyClass>();
             BodyParts = new Dictionary<string, BodyPartBaseClass>();
+            Events = new Dictionary<string, EventClass>();
         }
     }
 }
