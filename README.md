@@ -60,15 +60,19 @@ Commands
 
 Victory conditions
 -
-The HP of your foe reaches 0, Or The lust bar of your foe reaches 100.
+Either one of these can be met.
+- The HP of your foe reaches 0 
+- The lust bar of your foe reaches 100.
 
 Options upon victory
+-
 - If both you and the Foe have over 40% lust, Mutual options will be available  (as they are horny too) (items and money will be given after)
 - If you have over 50% lust, then forced options will be available, (items and money will be given afterward)
 - If the Foe has 100% lust, Mutual options will be available (items and money will be given afterward)
 - If you under 40% lust, No options available and you'll just get items and money and leave the foe.
 Note you have the choice not engage in activaties and just take items and money.
 
+---
 Defeat conditions
 -
 
