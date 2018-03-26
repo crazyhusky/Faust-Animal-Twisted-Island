@@ -12,7 +12,7 @@ outside world.
 
 Faust is using you as a guinea pig to test, how well a human will survive in the environment he has created.
 Your job is to escape the island and to return back home to tell people of the island.
-
+---
 Gameplay
 -
 This is a text based RPG, 
@@ -20,7 +20,7 @@ There are a lot of adult themed content within this game, so if you are easily o
 As I am a huge fan of transformation themed content this game has a lot of it.
 Many items within the this game will transform your body parts or make new ones grow. 
 Certain body parts give you new combat skills to use battle.
-
+---
 
 Area Unlocks
 -
@@ -38,7 +38,7 @@ To find these new areas hit explore when in that area at a certain level or high
 - Mountain -- Explore Cliffside when Level 15 or higher
 - Shrine -- Explore Outback when Level 20 or higher
 - Secret Lab -- Explore Underground cave When Level 25 
-
+---
 
 Battles
 -
@@ -57,7 +57,7 @@ Commands
 - Fantasize (it increase your lust)
 - Submit (Give up and submit to the Foe, this will only appear if you have only 40% lust)
 - Run (try to escape your foe)
-
+---
 Victory conditions
 -
 Either one of these can be met.
