@@ -12,6 +12,7 @@ outside world.
 
 Faust is using you as a guinea pig to test, how well a human will survive in the environment he has created.
 Your job is to escape the island and to return back home to tell people of the island.
+
 ---
 Gameplay
 -
@@ -20,6 +21,7 @@ There are a lot of adult themed content within this game, so if you are easily o
 As I am a huge fan of transformation themed content this game has a lot of it.
 Many items within the this game will transform your body parts or make new ones grow. 
 Certain body parts give you new combat skills to use battle.
+
 ---
 
 Area Unlocks
