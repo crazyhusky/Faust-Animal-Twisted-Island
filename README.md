@@ -71,7 +71,13 @@ Note you have the choice not engage in activaties and just take items and money.
 
 Defeat conditions
 -
-Your lust reaches 100% 
 
-- You submit to the Foe and lose a bit of money.
+- Your HP reaches 0 
+- Your lust reaches 100% 
+
+Upon Defeat
+-
+You are KO'ed or submit to the Foe,
+- You lose a bit of money.
+- A random body part will be transfomed into the same animal as what defeated you.
 
