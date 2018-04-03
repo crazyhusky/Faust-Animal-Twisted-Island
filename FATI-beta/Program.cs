@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FATI_beta.UI;
 using SharpPhysFS;
 
 namespace FATI_beta
@@ -16,7 +17,8 @@ namespace FATI_beta
         static void Main(string[] args)
         {
             GameInit();
-            RunWindow();
+            RealUI.test();
+            //RunWindow();
             GameDeInit();
         }
 
