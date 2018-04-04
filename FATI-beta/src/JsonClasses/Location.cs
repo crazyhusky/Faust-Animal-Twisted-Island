@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using FATI_beta.Mechanics;
 
 namespace FATI_beta.JsonClasses
 {
@@ -12,13 +13,16 @@ namespace FATI_beta.JsonClasses
 
         public string GetLocationInDirection(string _direction)
         {
-            var Location = "Unknown";
+            var Location = "Unknown\\Blocked";
             var locationName = Connections.Where(Connection => Connection.Direction == _direction)
                 .Select(Connection => Connection.ConnectedLocation).Single();
-            var LocationObject = Mechanics.JsonMapping.Instance.GetLocation(locationName);
-            if (LocationObject != null && LocationObject.Discovered == true)
+            var LocationObject = JsonMapping.Instance.GetLocation(locationName);
+            if (LocationObject != null)
             {
-                Location = LocationObject.Name;
+                if (LocationObject.Discovered)
+                {
+                    Location = LocationObject.Name;
+                }
             }
 
             return Location;
