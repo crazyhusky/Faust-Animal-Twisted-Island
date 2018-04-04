@@ -45,13 +45,12 @@ namespace FATI_beta.Mechanics
         {
             var filedata = physFSInstance.OpenRead(filepath);
             var jsonObject = DeserializeJsonFileData<T>(filedata);
-            if (jsonObject != null)
+            if (jsonObject == null)
             {
-                return jsonObject;
+                return (new T {Name = "null"});
             }
 
-            var newobject = new T {Name = "null"};
-            return newobject;
+            return jsonObject;
         }
     }
 }
