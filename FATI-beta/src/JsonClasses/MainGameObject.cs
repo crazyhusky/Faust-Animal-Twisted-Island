@@ -8,7 +8,7 @@
         {
         }
         public override string ToString() {
-            return Name +":"+ Description +":"+ GetType().Name;
+            return $"{Name}:{Description}:{GetType().Name}";
         }
     }
 }
