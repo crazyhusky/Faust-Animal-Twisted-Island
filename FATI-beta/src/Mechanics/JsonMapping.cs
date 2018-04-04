@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using FATI_beta.JsonClasses;
 
 namespace FATI_beta.Mechanics
@@ -49,10 +48,8 @@ namespace FATI_beta.Mechanics
             {
                 return myLocation;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
         public ItemClass GetItem(string ItemName)
         {
@@ -60,10 +57,8 @@ namespace FATI_beta.Mechanics
             {
                 return myItem;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
         public NPCClass GetNPC(string NpcName)
         {
@@ -71,10 +66,8 @@ namespace FATI_beta.Mechanics
             {
                 return myNpc;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
         public BaseAttackClass GetAttack(string AttackName)
         {
@@ -82,10 +75,8 @@ namespace FATI_beta.Mechanics
             {
                 return myAttack;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
 
         public TransformationBook GetTransformationBook(string BookName)
@@ -94,10 +85,8 @@ namespace FATI_beta.Mechanics
             {
                 return myBook;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
 
         public TransformationLibrary GetTransformationLibrary(string LibraryName)
@@ -106,10 +95,8 @@ namespace FATI_beta.Mechanics
             {
                 return myLibrary;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
 
         public EnemyClass GetEnemy(string enemyName)
@@ -118,10 +105,8 @@ namespace FATI_beta.Mechanics
             {
                 return myEnemy;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
 
         public EventClass GetEvent(string eventName)
@@ -130,10 +115,8 @@ namespace FATI_beta.Mechanics
             {
                 return myEvent;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
 
         public BodyPartBaseClass GetBodyPart(string bodyPartName)
@@ -142,10 +125,8 @@ namespace FATI_beta.Mechanics
             {
                 return myBodyPart;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
     }
 }
