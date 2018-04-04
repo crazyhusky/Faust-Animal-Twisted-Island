@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>FATI_beta</RootNamespace>
     <AssemblyName>FATI-beta</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -76,6 +76,7 @@
     <Compile Include="src\Mechanics\JsonMapping.cs" />
     <Compile Include="src\Mechanics\RandomNumbers.cs" />
     <Compile Include="src\Mechanics\RPGDice.cs" />
+    <Compile Include="src\UI\cool.xaml.cs" />
     <Compile Include="src\UI\RealUI.cs" />
     <Compile Include="TestFormX.cs">
       <SubType>Form</SubType>
@@ -94,6 +95,10 @@
     <Compile Include="src\JsonClasses\EnemyClass.cs" />
     <Compile Include="src\Mechanics\MainGameController.cs" />
     <Compile Include="src\UI\RealUI.Glade.cs" />
+    <Page Include="src\UI\cool.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -123,7 +128,6 @@
     <Content Include="libphysfs.x86.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="src\UI\cool.xaml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
