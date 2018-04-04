@@ -7,6 +7,7 @@ namespace FATI_beta.JsonClasses
         protected float Health;
         protected float Lust;
         protected int Coins;
+        protected int Level;
         protected List<BodyPartBaseClass> BodyParts;
         protected List<ItemClass> Inventory;
         protected Location CurrentLocation;
@@ -17,6 +18,11 @@ namespace FATI_beta.JsonClasses
         public void MoveToLocation(Location newlocation)
         {
             CurrentLocation = newlocation;
+        }
+
+        public int GetLevel()
+        {
+            return Level;
         }
     }
 }
