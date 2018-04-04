@@ -11,7 +11,7 @@ namespace FATI_beta.Mechanics
         private PhysFS filesystemLink;
         public MainGameController()
         {
-            DefinedParts = new JsonMapping();
+            DefinedParts = JsonMapping.Instance;
             filesystemLink = new PhysFS("");
         }
         public void LoadAssets()
