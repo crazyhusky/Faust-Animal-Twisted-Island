@@ -17,7 +17,7 @@ namespace FATI_beta
         static void Main(string[] args)
         {
             GameInit();
-            RealUI.test();
+            RealUI.test2();
             //RunWindow();
             GameDeInit();
         }

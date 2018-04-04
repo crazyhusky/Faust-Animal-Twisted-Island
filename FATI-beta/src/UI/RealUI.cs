@@ -6,7 +6,9 @@
     {
         public static void test2()
         {
-            
+            Application.Init();
+            var testy =new RealUI_Glade();
+            Application.Run();
         }
         public static void test()
         {

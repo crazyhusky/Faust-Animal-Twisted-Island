@@ -50,17 +50,18 @@ namespace FATI_beta.UI
         private Gtk.Label labelCoins;
         private Gtk.Label labelExp;
         private Gtk.ProgressBar progressBarExp;
-        private Gtk.Layout panel1;
-        private Gtk.Layout panel2;
+        private Gtk.Layout MainStoryTextPanel;
+        private Gtk.Layout ActionbuttonHolder;
         private Gtk.Button button12;
         private Gtk.Button button14;
         private Gtk.Button button11;
         private Gtk.Button button13;
         private Gtk.Button button15;
         private Gtk.Layout panel3;
-        private Gtk.Layout panel4;
-        private Gtk.Layout panel5;
-        private Gtk.Layout panel6;
+        private Gtk.Layout PlayerStatsPanel;
+        private Gtk.Layout AdditionalStatsPanel;
+        private Gtk.Layout MainActionsPanel;
+        private Gtk.Layout mainPanel;
         private Gtk.TextView richTextBoxMain;
         private Gtk.TextView richTextBoxSub;
         private Pango.FontDescription defaultFontBold;
@@ -70,6 +71,7 @@ namespace FATI_beta.UI
         public void initComponents()
         {
             MainWindow = new Window("Game");
+            mainPanel = new Layout(null, null);
             defaultFontBold = Pango.FontDescription.FromString("Microsoft Sans Serif 10");
             defaultFontBold.Weight = Pango.Weight.Bold;
             defaultFontRegular = Pango.FontDescription.FromString("Microsoft Sans Serif 10");
@@ -136,9 +138,9 @@ namespace FATI_beta.UI
             this.labelCoins = new Label();
             this.labelExp = new Label();
             this.progressBarExp = new ProgressBar();
-            this.panel1 = new Layout(null, null);
+            this.MainStoryTextPanel = new Layout(null, null);
             this.richTextBoxMain = new TextView();
-            this.panel2 = new Layout(null, null);
+            this.ActionbuttonHolder = new Layout(null, null);
             this.button12 = new Button();
             this.button14 = new Button();
             this.button11 = new Button();
@@ -146,26 +148,26 @@ namespace FATI_beta.UI
             this.button15 = new Button();
             this.panel3 = new Layout(null, null);
             this.richTextBoxSub = new TextView();
-            this.panel4 = new Layout(null, null);
-            this.panel5 = new Layout(null, null);
-            this.panel6 = new Layout(null, null);
+            this.PlayerStatsPanel = new Layout(null, null);
+            this.AdditionalStatsPanel = new Layout(null, null);
+            this.MainActionsPanel = new Layout(null, null);
 
             // 
             // labelLibido
             // 
             ////this.labelLibido.AutoSize = true;
             this.labelLibido.ModifyFont(defaultFontBold);
-           // //this.labelLibido.Location = new System.Drawing.Point(93, 69);
+            // //this.labelLibido.Location = new System.Drawing.Point(93, 69);
             this.labelLibido.Name = "labelLibido";
             this.labelLibido.SetSizeRequest(16, 16);
-           // //this.labelLibido.TabIndex = 9;
+            // //this.labelLibido.TabIndex = 9;
             this.labelLibido.Text = "0";
             // 
             // labelSpeed
             // 
-           // //this.labelSpeed.AutoSize = true;
+            // //this.labelSpeed.AutoSize = true;
             this.labelSpeed.ModifyFont(defaultFontBold);
-           // //this.labelSpeed.Location = new System.Drawing.Point(93, 47);
+            // //this.labelSpeed.Location = new System.Drawing.Point(93, 47);
             this.labelSpeed.Name = "labelSpeed";
             this.labelSpeed.SetSizeRequest(16, 16);
             ////this.labelSpeed.TabIndex = 8;
@@ -173,14 +175,14 @@ namespace FATI_beta.UI
             // 
             // labelToughness
             // 
-           // //this.labelToughness.AutoSize = true;
+            // //this.labelToughness.AutoSize = true;
             this.labelToughness.ModifyFont(defaultFontBold);
-           // //this.labelToughness.Location = new System.Drawing.Point(93, 27);
+            // //this.labelToughness.Location = new System.Drawing.Point(93, 27);
             this.labelToughness.Name = "labelToughness";
             this.labelToughness.SetSizeRequest(16, 16);
-           // //this.labelToughness.TabIndex = 7;
+            // //this.labelToughness.TabIndex = 7;
             this.labelToughness.Text = "0";
-           // this.labelToughness.Click += new System.EventHandler(this.label14_Click);
+            // this.labelToughness.Click += new System.EventHandler(this.label14_Click);
             // 
             // labelStrenght
             // 
@@ -194,22 +196,22 @@ namespace FATI_beta.UI
             // 
             // label6
             // 
-           // //this.label6.AutoSize = true;
+            // //this.label6.AutoSize = true;
             this.label6.ModifyFont(defaultFontBold);
-           // //this.label6.Location = new System.Drawing.Point(200, 47);
+            // //this.label6.Location = new System.Drawing.Point(200, 47);
             this.label6.Name = "label6";
             this.label6.SetSizeRequest(36, 16);
-           // //this.label6.TabIndex = 5;
+            // //this.label6.TabIndex = 5;
             this.label6.Text = "Lust";
             // 
             // label5
             // 
-           // //this.label5.AutoSize = true;
+            // //this.label5.AutoSize = true;
             this.label5.ModifyFont(defaultFontBold);
-           // //this.label5.Location = new System.Drawing.Point(200, 7);
+            // //this.label5.Location = new System.Drawing.Point(200, 7);
             this.label5.Name = "label5";
             this.label5.SetSizeRequest(29, 16);
-           // //this.label5.TabIndex = 4;
+            // //this.label5.TabIndex = 4;
             this.label5.Text = "HP";
             // 
             // label4
@@ -219,27 +221,27 @@ namespace FATI_beta.UI
             ////this.label4.Location = new System.Drawing.Point(8, 69);
             this.label4.Name = "label4";
             this.label4.SetSizeRequest(51, 16);
-           // //this.label4.TabIndex = 3;
+            // //this.label4.TabIndex = 3;
             this.label4.Text = "Libido";
             // 
             // label3
             // 
-           // //this.label3.AutoSize = true;
+            // //this.label3.AutoSize = true;
             this.label3.ModifyFont(defaultFontBold);
-           // //this.label3.Location = new System.Drawing.Point(8, 47);
+            // //this.label3.Location = new System.Drawing.Point(8, 47);
             this.label3.Name = "label3";
             this.label3.SetSizeRequest(54, 16);
-           // //this.label3.TabIndex = 2;
+            // //this.label3.TabIndex = 2;
             this.label3.Text = "Speed";
             // 
             // label2
             // 
             ////this.label2.AutoSize = true;
             this.label2.ModifyFont(defaultFontBold);
-           // //this.label2.Location = new System.Drawing.Point(8, 27);
+            // //this.label2.Location = new System.Drawing.Point(8, 27);
             this.label2.Name = "label2";
             this.label2.SetSizeRequest(85, 16);
-          //  //this.label2.TabIndex = 1;
+            //  //this.label2.TabIndex = 1;
             this.label2.Text = "Toughness";
             // 
             // label1
@@ -249,22 +251,22 @@ namespace FATI_beta.UI
             ////this.label1.Location = new System.Drawing.Point(8, 7);
             this.label1.Name = "label1";
             this.label1.SetSizeRequest(65, 16);
-           // //this.label1.TabIndex = 0;
+            // //this.label1.TabIndex = 0;
             this.label1.Text = "Strenght";
             // 
             // btnOptions
             // 
             ////this.btnOptions.BackColor = System.Drawing.Color.PeachPuff;
             ////this.btnOptions.FlatAppearance.BorderSize = 2;
-           // //this.btnOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            // //this.btnOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOptions.ModifyFont(defaultFontBold);
             ////this.btnOptions.Location = new System.Drawing.Point(163, 3);
             //this.btnOptions.Name = "btnOptions";
-           // this.btnOptions.SetSizeRequest(140, 33);
+            // this.btnOptions.SetSizeRequest(140, 33);
             ////this.btnOptions.TabIndex = 18;
             this.btnOptions.Label = "Options";
             ////this.btnOptions.UseVisualStyleBackColor = false;
-           // this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
+            // this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
             // 
             // btnNewGame
             // 
@@ -644,15 +646,15 @@ namespace FATI_beta.UI
             this.progressBarExp.SetSizeRequest(95, 10);
             //this.progressBarExp.TabIndex = 14;
             // 
-            // panel1
+            // MainStoryTextPanel
             // 
-            //this.panel1.BackColor = System.Drawing.Color.MediumOrchid;
-            //this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Add(this.richTextBoxMain);
-            //this.panel1.Location = new System.Drawing.Point(346, 10);
-            this.panel1.Name = "panel1";
-            this.panel1.SetSizeRequest(906, 495);
-            //this.panel1.TabIndex = 4;
+            //this.MainStoryTextPanel.BackColor = System.Drawing.Color.MediumOrchid;
+            //this.MainStoryTextPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MainStoryTextPanel.Add(this.richTextBoxMain);
+            //this.MainStoryTextPanel.Location = new System.Drawing.Point(346, 10);
+            this.MainStoryTextPanel.Name = "MainStoryTextPanel";
+            this.MainStoryTextPanel.SetSizeRequest(906, 495);
+            //this.MainStoryTextPanel.TabIndex = 4;
             // 
             // richTextBoxMain
             // 
@@ -668,30 +670,29 @@ namespace FATI_beta.UI
             // 
             //this.panel2.BackColor = System.Drawing.Color.MediumSeaGreen;
             //this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Add(this.button12);
-            this.panel2.Add(this.button12);
-            this.panel2.Add(this.button14);
-            this.panel2.Add(this.button11);
-            this.panel2.Add(this.button13);
-            this.panel2.Add(this.button15);
-            this.panel2.Add(this.button1);
-            this.panel2.Add(this.button3);
-            this.panel2.Add(this.button7);
-            this.panel2.Add(this.buttonCmd5);
-            this.panel2.Add(this.button9);
-            this.panel2.Add(this.button6);
-            this.panel2.Add(this.buttonCmd4);
-            this.panel2.Add(this.button8);
-            this.panel2.Add(this.button2);
-            this.panel2.Add(this.button5);
-            this.panel2.Add(this.buttonCmd1);
-            this.panel2.Add(this.buttonCmd3);
-            this.panel2.Add(this.button4);
-            this.panel2.Add(this.button10);
-            this.panel2.Add(this.buttonCmd2);
+            this.ActionbuttonHolder.Add(this.button12);
+            this.ActionbuttonHolder.Add(this.button14);
+            this.ActionbuttonHolder.Add(this.button11);
+            this.ActionbuttonHolder.Add(this.button13);
+            this.ActionbuttonHolder.Add(this.button15);
+            this.ActionbuttonHolder.Add(this.button1);
+            this.ActionbuttonHolder.Add(this.button3);
+            this.ActionbuttonHolder.Add(this.button7);
+            this.ActionbuttonHolder.Add(this.buttonCmd5);
+            this.ActionbuttonHolder.Add(this.button9);
+            this.ActionbuttonHolder.Add(this.button6);
+            this.ActionbuttonHolder.Add(this.buttonCmd4);
+            this.ActionbuttonHolder.Add(this.button8);
+            this.ActionbuttonHolder.Add(this.button2);
+            this.ActionbuttonHolder.Add(this.button5);
+            this.ActionbuttonHolder.Add(this.buttonCmd1);
+            this.ActionbuttonHolder.Add(this.buttonCmd3);
+            this.ActionbuttonHolder.Add(this.button4);
+            this.ActionbuttonHolder.Add(this.button10);
+            this.ActionbuttonHolder.Add(this.buttonCmd2);
             //this.panel2.Location = new System.Drawing.Point(346, 509);
-            this.panel2.Name = "panel2";
-            this.panel2.SetSizeRequest(906, 167);
+            this.ActionbuttonHolder.Name = "ActionButtonHolder";
+            this.ActionbuttonHolder.SetSizeRequest(906, 167);
             //this.panel2.TabIndex = 5;
             //this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -750,8 +751,8 @@ namespace FATI_beta.UI
             // 
             // button15
             // 
-           // //this.button15.BackColor = System.Drawing.Color.Peru;
-           // //this.button15.FlatAppearance.BorderSize = 2;
+            // //this.button15.BackColor = System.Drawing.Color.Peru;
+            // //this.button15.FlatAppearance.BorderSize = 2;
             ////this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.ModifyFont(defaultFontBold);
             ////this.button15.Location = new System.Drawing.Point(718, 78);
@@ -765,9 +766,9 @@ namespace FATI_beta.UI
             // 
             //this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))),
             //    ((int)(((byte)(128)))));
-           // //this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            // //this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Add(this.richTextBoxSub);
-           // //this.panel3.Location = new System.Drawing.Point(10, 112);
+            // //this.panel3.Location = new System.Drawing.Point(10, 112);
             this.panel3.Name = "panel3";
             this.panel3.SetSize(330, 408);
             ////this.panel3.TabIndex = 6;
@@ -777,68 +778,68 @@ namespace FATI_beta.UI
             ////this.richTextBoxSub.BackColor = System.Drawing.Color.PeachPuff;
             this.richTextBoxSub.ModifyFont(FontDescription.FromString("Microsoft Sans Serif 10"));
 
-           // //this.richTextBoxSub.Location = new System.Drawing.Point(3, 3);
+            // //this.richTextBoxSub.Location = new System.Drawing.Point(3, 3);
             this.richTextBoxSub.Name = "richTextBoxSub";
             this.richTextBoxSub.SetSizeRequest(322, 400);
             ////this.richTextBoxSub.TabIndex = 0;
             //this.richTextBoxSub.Text = "";
-           // this.richTextBoxSub.TextChanged += new System.EventHandler(this.richTextBoxSub_TextChanged);
+            // this.richTextBoxSub.TextChanged += new System.EventHandler(this.richTextBoxSub_TextChanged);
             // 
-            // panel4
+            // PlayerStatsPanel
             // 
-            ////this.panel4.BackColor = System.Drawing.Color.SteelBlue;
-            ////this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Add(this.progressBarLust);
-            this.panel4.Add(this.labelLibido);
-            this.panel4.Add(this.labelStrenght);
-            this.panel4.Add(this.progressBarHP);
-            this.panel4.Add(this.label6);
-            this.panel4.Add(this.label1);
-            this.panel4.Add(this.labelToughness);
-            this.panel4.Add(this.labelLust);
-            this.panel4.Add(this.label5);
-            this.panel4.Add(this.label2);
-            this.panel4.Add(this.labelSpeed);
-            this.panel4.Add(this.labelHP);
-            this.panel4.Add(this.label4);
-            this.panel4.Add(this.label3);
-           // //this.panel4.Location = new System.Drawing.Point(10, 10);
-            this.panel4.Name = "panel4";
-            this.panel4.SetSize(330, 93);
-            ////this.panel4.TabIndex = 7;
+            ////this.PlayerStatsPanel.BackColor = System.Drawing.Color.SteelBlue;
+            ////this.PlayerStatsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PlayerStatsPanel.Add(this.progressBarLust);
+            this.PlayerStatsPanel.Add(this.labelLibido);
+            this.PlayerStatsPanel.Add(this.labelStrenght);
+            this.PlayerStatsPanel.Add(this.progressBarHP);
+            this.PlayerStatsPanel.Add(this.label6);
+            this.PlayerStatsPanel.Add(this.label1);
+            this.PlayerStatsPanel.Add(this.labelToughness);
+            this.PlayerStatsPanel.Add(this.labelLust);
+            this.PlayerStatsPanel.Add(this.label5);
+            this.PlayerStatsPanel.Add(this.label2);
+            this.PlayerStatsPanel.Add(this.labelSpeed);
+            this.PlayerStatsPanel.Add(this.labelHP);
+            this.PlayerStatsPanel.Add(this.label4);
+            this.PlayerStatsPanel.Add(this.label3);
+            // //this.PlayerStatsPanel.Location = new System.Drawing.Point(10, 10);
+            this.PlayerStatsPanel.Name = "PlayerStatsPanel";
+            this.PlayerStatsPanel.SetSize(330, 93);
+            ////this.PlayerStatsPanel.TabIndex = 7;
             // 
-            // panel5
+            // AdditionalStatsPanel
             // 
-           // this.panel5. = System.Drawing.Color.SteelBlue;
-           // //this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Add(this.progressBarExp);
-            this.panel5.Add(this.label10);
-            this.panel5.Add(this.labelDay);
-            this.panel5.Add(this.label11);
-            this.panel5.Add(this.labelExp);
-            this.panel5.Add(this.labelLevel);
-            this.panel5.Add(this.label7);
-            this.panel5.Add(this.label9);
-            this.panel5.Add(this.labelCoins);
-            this.panel5.Add(this.labelHour);
-            this.panel5.Add(this.label8);
-            ////this.panel5.Location = new System.Drawing.Point(10, 524);
-            this.panel5.Name = "panel5";
-            this.panel5.SetSize(330, 65);
-            ////this.panel5.TabIndex = 8;
+            // this.AdditionalStatsPanel. = System.Drawing.Color.SteelBlue;
+            // //this.AdditionalStatsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AdditionalStatsPanel.Add(this.progressBarExp);
+            this.AdditionalStatsPanel.Add(this.label10);
+            this.AdditionalStatsPanel.Add(this.labelDay);
+            this.AdditionalStatsPanel.Add(this.label11);
+            this.AdditionalStatsPanel.Add(this.labelExp);
+            this.AdditionalStatsPanel.Add(this.labelLevel);
+            this.AdditionalStatsPanel.Add(this.label7);
+            this.AdditionalStatsPanel.Add(this.label9);
+            this.AdditionalStatsPanel.Add(this.labelCoins);
+            this.AdditionalStatsPanel.Add(this.labelHour);
+            this.AdditionalStatsPanel.Add(this.label8);
+            ////this.AdditionalStatsPanel.Location = new System.Drawing.Point(10, 524);
+            this.AdditionalStatsPanel.Name = "AdditionalStatsPanel";
+            this.AdditionalStatsPanel.SetSize(330, 65);
+            ////this.AdditionalStatsPanel.TabIndex = 8;
             // 
-            // panel6
+            // MainActionsPanel
             // 
-            ////this.panel6.BackColor = System.Drawing.Color.DarkOrange;
-            ////this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Add(this.btnOptions);
-            this.panel6.Add(this.btnLoad);
-            this.panel6.Add(this.btnSave);
-            this.panel6.Add(this.btnNewGame);
-            ////this.panel6.Location = new System.Drawing.Point(10, 594);
-            this.panel6.Name = "panel6";
-            this.panel6.SetSize(330, 82);
-            ////this.panel6.TabIndex = 9;
+            ////this.MainActionsPanel.BackColor = System.Drawing.Color.DarkOrange;
+            ////this.MainActionsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MainActionsPanel.Add(this.btnOptions);
+            this.MainActionsPanel.Add(this.btnLoad);
+            this.MainActionsPanel.Add(this.btnSave);
+            this.MainActionsPanel.Add(this.btnNewGame);
+            ////this.MainActionsPanel.Location = new System.Drawing.Point(10, 594);
+            this.MainActionsPanel.Name = "MainActionsPanel";
+            this.MainActionsPanel.SetSizeRequest(330, 82);
+            ////this.MainActionsPanel.TabIndex = 9;
             // 
             // TestFormX
             // 
@@ -846,15 +847,23 @@ namespace FATI_beta.UI
             // MainWindow.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             //MainWindow.BackColor = System.Drawing.Color.LightSteelBlue;
             // MainWindow.ClientSize = new System.Drawing.Size(1264, 681);
-            MainWindow.SetDefaultSize(1264, 681);
-            MainWindow.Add(this.panel6);
-            MainWindow.Add(this.panel5);
-            MainWindow.Add(this.panel4);
-            MainWindow.Add(this.panel3);
-            MainWindow.Add(this.panel2);
-            MainWindow.Add(this.panel1);
+            MainWindow.Resize(1264, 681);
+
+            mainPanel.Add(this.MainActionsPanel);
+            mainPanel.Add(this.AdditionalStatsPanel);
+            mainPanel.Add(this.PlayerStatsPanel);
+            mainPanel.Add(this.panel3);
+            mainPanel.Add(this.ActionbuttonHolder);
+            mainPanel.Add(this.MainStoryTextPanel);
+            MainWindow.Add(mainPanel);
             MainWindow.Name = "TestFormX";
+            MainWindow.ShowAll();
             //MainWindow.Text = "TestFormX";
+        }
+
+        public RealUI_Glade()
+        {
+            initComponents();
         }
     }
 }
