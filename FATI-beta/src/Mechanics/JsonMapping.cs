@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using FATI_beta.JsonClasses;
 
 namespace FATI_beta.Mechanics
@@ -47,6 +48,99 @@ namespace FATI_beta.Mechanics
             if (Locations.TryGetValue(LocationName, out var myLocation))
             {
                 return myLocation;
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public ItemClass GetItem(string ItemName)
+        {
+            if (Items.TryGetValue(ItemName, out var myItem))
+            {
+                return myItem;
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public NPCClass GetNPC(string NpcName)
+        {
+            if (NPCList.TryGetValue(NpcName, out var myNpc))
+            {
+                return myNpc;
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public BaseAttackClass GetAttack(string AttackName)
+        {
+            if (Attacks.TryGetValue(AttackName, out var myAttack))
+            {
+                return myAttack;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public TransformationBook GetTransformationBook(string BookName)
+        {
+            if (TransformationBooks.TryGetValue(BookName, out var myBook))
+            {
+                return myBook;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public TransformationLibrary GetTransformationLibrary(string LibraryName)
+        {
+            if (TransformationLibraries.TryGetValue(LibraryName, out var myLibrary))
+            {
+                return myLibrary;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public EnemyClass GetEnemy(string enemyName)
+        {
+            if (Enemies.TryGetValue(enemyName, out var myEnemy))
+            {
+                return myEnemy;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public EventClass GetEvent(string eventName)
+        {
+            if (Events.TryGetValue(eventName, out var myEvent))
+            {
+                return myEvent;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public BodyPartBaseClass GetBodyPart(string bodyPartName)
+        {
+            if (BodyParts.TryGetValue(bodyPartName, out var myBodyPart))
+            {
+                return myBodyPart;
             }
             else
             {
