@@ -76,7 +76,6 @@
     <Compile Include="src\Mechanics\JsonMapping.cs" />
     <Compile Include="src\Mechanics\RandomNumbers.cs" />
     <Compile Include="src\Mechanics\RPGDice.cs" />
-    <Compile Include="src\UI\cool.xaml.cs" />
     <Compile Include="src\UI\RealUI.cs" />
     <Compile Include="TestFormX.cs">
       <SubType>Form</SubType>
@@ -95,13 +94,10 @@
     <Compile Include="src\JsonClasses\EnemyClass.cs" />
     <Compile Include="src\Mechanics\MainGameController.cs" />
     <Compile Include="src\UI\RealUI.Glade.cs" />
-    <Page Include="src\UI\cool.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="GameLayout.cd" />
     <None Include="packages.config" />
     <None Include="libphysfs.dylib">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -115,9 +111,7 @@
       <DependentUpon>TestFormX.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\UI\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\SharpPhysFS\SharpPhysFS\SharpPhysFS.csproj">
       <Project>{AD6AA182-8C7F-4F3A-AAEF-7BD993D1D262}</Project>

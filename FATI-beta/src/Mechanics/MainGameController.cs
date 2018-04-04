@@ -5,19 +5,22 @@ using SharpPhysFS;
 
 namespace FATI_beta.Mechanics
 {
-    public class MainGameController : IDisposable
+    public sealed class MainGameController : IDisposable
     {
         private JsonMapping DefinedParts;
         private PhysFS filesystemLink;
+
         public MainGameController()
         {
             DefinedParts = JsonMapping.Instance;
             filesystemLink = new PhysFS("");
         }
+
         public void LoadAssets()
         {
             AssetLoading.LoadFiles(filesystemLink, DefinedParts);
         }
+
         public void SetupFileSystems()
         {
             var seporator = filesystemLink.GetDirSeparator();
@@ -34,9 +37,9 @@ namespace FATI_beta.Mechanics
             filesystemLink.SetWriteDir(saveData);
             filesystemLink.Mount(UnPackedData, "", true);
             SetupPackedData(Packed);
-
         }
-        public void SetupPackedData(string baseDir)
+
+        private void SetupPackedData(string baseDir)
         {
             //get all files in alphabetic order
             var sorted = Directory.GetFiles(baseDir).OrderBy(f => f);
@@ -46,14 +49,17 @@ namespace FATI_beta.Mechanics
                 {
                     filesystemLink.Mount(file, "", false);
                 }
-                catch (PhysFS.PhysFSException) { }
+                catch (PhysFS.PhysFSException)
+                {
+                }
             }
         }
 
         #region IDisposable Support
+
         private bool disposedValue = false; // To detect redundant calls
 
-        protected virtual void Dispose(bool disposing)
+        private void Dispose(bool disposing)
         {
             if (!disposedValue)
             {
@@ -70,9 +76,10 @@ namespace FATI_beta.Mechanics
         }
 
         // TODO: override a finalizer only if Dispose(bool disposing) above has code to free unmanaged resources.
-        ~MainGameController() {
-           // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
-           Dispose(false);
+        ~MainGameController()
+        {
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            Dispose(false);
         }
 
         // This code added to correctly implement the disposable pattern.
@@ -83,6 +90,7 @@ namespace FATI_beta.Mechanics
             // TODO: uncomment the following line if the finalizer is overridden above.
             GC.SuppressFinalize(this);
         }
+
         #endregion
     }
 }
