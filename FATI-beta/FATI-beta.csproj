@@ -75,6 +75,7 @@
     <Compile Include="src\Mechanics\AssetLoading.cs" />
     <Compile Include="src\Mechanics\JsonMapping.cs" />
     <Compile Include="src\Mechanics\RandomNumbers.cs" />
+    <Compile Include="src\Mechanics\RPGDice.cs" />
     <Compile Include="src\UI\RealUI.cs" />
     <Compile Include="TestFormX.cs">
       <SubType>Form</SubType>

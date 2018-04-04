@@ -21,7 +21,7 @@ namespace FATI_beta.Mechanics
 
             var multiplier = Math.Max(0, (asciiValueOfRandomCharacter / 255d) - 0.00000000001d);
 
-// We need to add one to the range, to allow for the rounding done with Math.Floor
+            // We need to add one to the range, to allow for the rounding done with Math.Floor
 
             var range = maximumValue - minimumValue + 1;
 
