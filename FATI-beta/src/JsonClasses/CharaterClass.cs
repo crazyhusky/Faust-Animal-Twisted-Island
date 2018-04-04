@@ -5,6 +5,7 @@ namespace FATI_beta.JsonClasses
     public class CharaterClass : MainGameObject
     {
         protected float Health;
+        protected float MaxHealth;
         protected float Lust;
         protected int Coins;
         protected int Level;
