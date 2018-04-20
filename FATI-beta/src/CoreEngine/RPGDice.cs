@@ -1,6 +1,4 @@
-﻿using System.Runtime.Remoting.Messaging;
-
-namespace FATI_beta.Mechanics
+﻿namespace FATI_beta.CoreEngine
 {
     public class RPGDice
     {

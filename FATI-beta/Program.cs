@@ -12,19 +12,19 @@ namespace FATI_beta
 {
     class Program
     {
-        protected static Mechanics.MainGameController MainGame;
+        protected static CoreEngine.MainGameController MainGame;
         [STAThread]
         static void Main(string[] args)
         {
             GameInit();
-            //RealUI.test2();
-            RunWindow();
+            RealUI.test2();
+            //RunWindow();
             GameDeInit();
         }
 
         static void GameInit()
         {
-            MainGame = new Mechanics.MainGameController();
+            MainGame = new CoreEngine.MainGameController();
             MainGame.SetupFileSystems();
             MainGame.LoadAssets();
         }

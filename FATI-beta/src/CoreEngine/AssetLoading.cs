@@ -5,7 +5,7 @@ using FATI_beta.JsonClasses;
 using Newtonsoft.Json;
 using SharpPhysFS;
 
-namespace FATI_beta.Mechanics
+namespace FATI_beta.CoreEngine
 {
     class AssetLoading
     {

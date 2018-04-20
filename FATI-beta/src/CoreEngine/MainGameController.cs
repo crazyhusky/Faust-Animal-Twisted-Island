@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using SharpPhysFS;
 
-namespace FATI_beta.Mechanics
+namespace FATI_beta.CoreEngine
 {
     public sealed class MainGameController : IDisposable
     {
