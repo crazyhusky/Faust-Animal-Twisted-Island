@@ -60,16 +60,18 @@ namespace FATI_beta.UI
         private Gtk.Layout panel3;
         private Gtk.Layout PlayerStatsPanel;
         private Gtk.Layout AdditionalStatsPanel;
-        private Gtk.Layout MainActionsPanel;
+        private Gtk.Table MainActionsPanel;
         private Gtk.Layout mainPanel;
         private Gtk.TextView richTextBoxMain;
         private Gtk.TextView richTextBoxSub;
         private Pango.FontDescription defaultFontBold;
         private Pango.FontDescription defaultFontRegular;
+        private Gtk.Alignment ActionPanelLocation;
         private Gtk.Window MainWindow;
 
         public void initComponents()
         {
+            ActionPanelLocation = new Alignment(0, 1, 0, 0);
             MainWindow = new Window("Game");
             mainPanel = new Layout(null, null);
             defaultFontBold = Pango.FontDescription.FromString("Microsoft Sans Serif 10");
@@ -150,7 +152,7 @@ namespace FATI_beta.UI
             this.richTextBoxSub = new TextView();
             this.PlayerStatsPanel = new Layout(null, null);
             this.AdditionalStatsPanel = new Layout(null, null);
-            this.MainActionsPanel = new Layout(null, null);
+            this.MainActionsPanel = new Table(2, 2,true);
 
             // 
             // labelLibido
@@ -838,7 +840,8 @@ namespace FATI_beta.UI
             this.MainActionsPanel.Add(this.btnNewGame);
             ////this.MainActionsPanel.Location = new System.Drawing.Point(10, 594);
             this.MainActionsPanel.Name = "MainActionsPanel";
-            this.MainActionsPanel.SetSizeRequest(330, 82);
+            //this.MainActionsPanel.SetSizeRequest(330, 82);
+            this.ActionPanelLocation.Add(MainActionsPanel);
             ////this.MainActionsPanel.TabIndex = 9;
             // 
             // TestFormX
@@ -849,12 +852,12 @@ namespace FATI_beta.UI
             // MainWindow.ClientSize = new System.Drawing.Size(1264, 681);
             MainWindow.Resize(1264, 681);
 
-            mainPanel.Add(this.MainActionsPanel);
-            mainPanel.Add(this.AdditionalStatsPanel);
-            mainPanel.Add(this.PlayerStatsPanel);
-            mainPanel.Add(this.panel3);
-            mainPanel.Add(this.ActionbuttonHolder);
-            mainPanel.Add(this.MainStoryTextPanel);
+            mainPanel.Add(this.ActionPanelLocation);
+            //mainPanel.Add(this.AdditionalStatsPanel);
+            //mainPanel.Add(this.PlayerStatsPanel);
+            //mainPanel.Add(this.panel3);
+            //mainPanel.Add(this.ActionbuttonHolder);
+            //mainPanel.Add(this.MainStoryTextPanel);
             MainWindow.Add(mainPanel);
             MainWindow.Name = "TestFormX";
             MainWindow.ShowAll();
