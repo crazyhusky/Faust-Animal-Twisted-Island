@@ -1,10 +1,10 @@
 <Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="TestFormX2" Height="681" Width="1264">
-  <Panel Background="LightSteelBlue" Height="681" Width="1264">
+  <Panel Background="LightSteelBlue" Height="681" Width="1264" >
     <Canvas Name="BaseActionPanel" Height="82" Width="330" Background="DarkOrange" Margin="0,579,934,20" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
-      <Button Name="btnOptions" Height="33" Width="140" Background="PeachPuff" Click="btnOptions_Click" Margin="153,-12,971,660" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Options</Button>
-      <Button Name="btnLoad" Height="33" Width="140" Background="PeachPuff" Click="btnLoad_Click" Margin="154,27,970,621" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Load</Button>
-      <Button Name="btnSave" Height="33" Width="140" Background="PeachPuff" Click="btnSave_Click" Margin="8,27,1116,621" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Save</Button>
-      <Button Name="btnNewGame" Height="33" Width="140" Background="PeachPuff" Click="btnNewGame_Click" Margin="8,-12,1116,660" HorizontalAlignment="Right" VerticalAlignment="Bottom" >New Game</Button>
+      <Button Name="btnOptions" Height="33" Width="140" Background="PeachPuff" Click="btnOptions_Click" Margin="153,5,971,660" >Options</Button>
+      <Button Name="btnNewGame" Height="33" Width="140" Background="PeachPuff" Click="btnNewGame_Click" Margin="8,5,1116,660" >New Game</Button>
+      <Button Name="btnLoad" Height="33" Width="140" Background="PeachPuff" Click="btnLoad_Click" Margin="154,40,970,621" >Load</Button>
+      <Button Name="btnSave" Height="33" Width="140" Background="PeachPuff" Click="btnSave_Click" Margin="8,40,1116,621" >Save</Button>
     </Canvas>
     <Canvas Name="StatsPanel" Height="65" Width="330" Background="SteelBlue" Margin="0,509,934,107" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
       <TextBlock Name="label10" Height="25" Width="50" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="241,-3,973,659" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Hour</TextBlock>
@@ -18,47 +18,80 @@
       <TextBlock Name="labelHour" Height="25" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="290,-3,949,659" HorizontalAlignment="Right" VerticalAlignment="Bottom" >0</TextBlock>
       <TextBlock Name="label8" Height="25" Width="43" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="8,23,1213,633" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Exp</TextBlock>
     </Canvas>
-    <Canvas Name="PlayerStatsPanel" Height="93" Width="330" Background="SteelBlue" Margin="0,-5,934,593" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
+    <Grid Name="PlayerStatsPanel" Height="93" Width="330" Background="SteelBlue" Margin="0,-5,929,585" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <TextBlock Name="StrengthName" Grid.Column="0" Grid.Row="0" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >Strenght</TextBlock>
+      <TextBlock Name="ToughnessName" Grid.Column="0" Grid.Row="1" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >Toughness</TextBlock>
+      <TextBlock Name="SpeedName" Grid.Column="0" Grid.Row="2" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >Speed</TextBlock>
+      <TextBlock Name="LibidoName" Grid.Column="0" Grid.Row="3" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >Libido</TextBlock>
+      <TextBlock Name="HPName" Grid.Column="3" Grid.Row="0" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >HP</TextBlock>
+      <TextBlock Name="LustName" Grid.Column="3" Grid.Row="3" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >Lust</TextBlock>
+      
+
+
+
+    </Grid>
+    <!--<Canvas Name="PlayerStatsPanel" Height="93" Width="330" Background="SteelBlue" Margin="0,-5,934,593" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
       <TextBlock Name="labelLibido" Height="25" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="93,54,1146,602" HorizontalAlignment="Right" VerticalAlignment="Bottom" >0</TextBlock>
       <TextBlock Name="labelStrenght" Height="25" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="93,-8,1146,664" HorizontalAlignment="Right" VerticalAlignment="Bottom" >0</TextBlock>
-      <TextBlock Name="label6" Height="25" Width="45" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="200,32,1019,624" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Lust</TextBlock>
-      <TextBlock Name="label1" Height="25" Width="74" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="8,-8,1182,664" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Strenght</TextBlock>
       <TextBlock Name="labelToughness" Height="25" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="93,12,1146,644" HorizontalAlignment="Right" VerticalAlignment="Bottom" >0</TextBlock>
       <TextBlock Name="labelLust" Height="25" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="254,32,985,624" HorizontalAlignment="Right" VerticalAlignment="Bottom" >0</TextBlock>
-      <TextBlock Name="label5" Height="25" Width="38" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="200,-8,1026,664" HorizontalAlignment="Right" VerticalAlignment="Bottom" >HP</TextBlock>
-      <TextBlock Name="label2" Height="25" Width="94" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="8,12,1162,644" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Toughness</TextBlock>
       <TextBlock Name="labelSpeed" Height="25" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="93,32,1146,624" HorizontalAlignment="Right" VerticalAlignment="Bottom" >0</TextBlock>
       <TextBlock Name="labelHP" Height="25" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="254,-8,985,664" HorizontalAlignment="Right" VerticalAlignment="Bottom" >0</TextBlock>
-      <TextBlock Name="label4" Height="25" Width="60" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="8,54,1196,602" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Libido</TextBlock>
       <TextBlock Name="label3" Height="25" Width="63" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="8,32,1193,624" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Speed</TextBlock>
-    </Canvas>
-    <Canvas Name="PlayerDescriptionPanel" Height="408" Width="330" Margin="0,97,934,176" Background="#FFC080" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
-      <TextBox Name="PlayerDescription" Height="400" Width="322" Background="PeachPuff" Margin="-7,-12,949,293" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBox>
-    </Canvas>
-    <Canvas Name="GenericButtonPanel" Height="167" Width="906" Background="MediumSeaGreen" Margin="336,494,22,20" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
-      <Button Name="button12" Height="34" Width="170" Background="Peru" Margin="180,63,914,584" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button12</Button>
-      <Button Name="button14" Height="34" Width="170" Background="Peru" Margin="532,63,562,584" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button14</Button>
-      <Button Name="button11" Height="34" Width="170" Background="Peru" Margin="4,63,1090,584" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button11</Button>
-      <Button Name="button13" Height="34" Width="170" Background="Peru" Margin="356,63,738,584" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button13</Button>
-      <Button Name="button15" Height="34" Width="170" Background="Peru" Margin="708,63,386,584" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button15</Button>
-      <Button Name="button1" Height="34" Width="170" Background="Peru" Margin="4,-11,1090,658" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button1</Button>
-      <Button Name="button3" Height="34" Width="170" Background="Peru" Margin="356,-11,738,658" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button3</Button>
-      <Button Name="button7" Height="34" Width="170" Background="Peru" Margin="180,26,914,621" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button7</Button>
-      <Button Name="buttonCmd5" Height="34" Width="170" Background="PeachPuff" Margin="708,111,386,536" HorizontalAlignment="Right" VerticalAlignment="Bottom" >buttonCmd5</Button>
-      <Button Name="button9" Height="34" Width="170" Background="Peru" Margin="532,26,562,621" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button9</Button>
-      <Button Name="button6" Height="34" Width="170" Background="Peru" Margin="4,26,1090,621" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button6</Button>
-      <Button Name="buttonCmd4" Height="34" Width="170" Background="PeachPuff" Margin="532,111,562,536" HorizontalAlignment="Right" VerticalAlignment="Bottom" >buttonCmd4</Button>
-      <Button Name="button8" Height="34" Width="170" Background="Peru" Margin="356,26,738,621" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button8</Button>
-      <Button Name="button2" Height="34" Width="170" Background="Peru" Margin="180,-11,914,658" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button2</Button>
-      <Button Name="button5" Height="34" Width="170" Background="Peru" Margin="708,-11,386,658" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button5</Button>
-      <Button Name="buttonCmd1" Height="34" Width="170" Background="PeachPuff" Margin="4,111,1090,536" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Perks</Button>
-      <Button Name="buttonCmd3" Height="34" Width="170" Background="PeachPuff" Margin="356,111,738,536" HorizontalAlignment="Right" VerticalAlignment="Bottom" >buttonCmd3</Button>
-      <Button Name="button4" Height="34" Width="170" Background="Peru" Margin="532,-11,562,658" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button4</Button>
-      <Button Name="button10" Height="34" Width="170" Background="Peru" Margin="708,26,386,621" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button10</Button>
-      <Button Name="buttonCmd2" Height="34" Width="170" Background="PeachPuff" Margin="180,111,914,536" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Inventory</Button>
-    </Canvas>
-    <Panel Name="WorldTextPanel" Height="495" Width="906" Background="MediumOrchid" Margin="336,-5,22,191" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
-      <TextBox Name="WorldText" Height="487" Width="898" Background="Thistle" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
-    </Panel>
+    </Canvas>-->
+    <Border Name="PlayerDescriptionPanel" Height="408" Width="330" Margin="0,97,934,176" Background="#FFC080" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
+      <TextBox Name="PlayerDescription" Height="400" Width="322" Background="PeachPuff"/>
+    </Border>
+    <Grid Name="GenericButtonPanel" Height="167" Width="906" Background="MediumSeaGreen" Margin="336,494,22,20" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="170" />
+        <ColumnDefinition Width="170" />
+        <ColumnDefinition Width="170" />
+        <ColumnDefinition Width="170" />
+        <ColumnDefinition Width="170" />
+      </Grid.ColumnDefinitions>
+      <Button Name="buttonCmd5" Grid.Column="4" Grid.Row="4" Background="PeachPuff" >buttonCmd5</Button>
+      <Button Name="buttonCmd4" Grid.Column="3" Grid.Row="4" Background="PeachPuff" >buttonCmd4</Button>
+      <Button Name="buttonCmd3" Grid.Column="2" Grid.Row="4" Background="PeachPuff" >buttonCmd3</Button>
+      <Button Name="buttonCmd2" Grid.Column="1" Grid.Row="4" Background="PeachPuff" >Inventory</Button>
+      <Button Name="buttonCmd1" Grid.Column="0" Grid.Row="4" Background="PeachPuff" >Perks</Button>
+      <Button Name="button15" Grid.Column="4" Grid.Row="3" Background="Peru" >button15</Button>
+      <Button Name="button14" Grid.Column="3" Grid.Row="3" Background="Peru" >button14</Button>
+      <Button Name="button13" Grid.Column="2" Grid.Row="3" Background="Peru" >button13</Button>
+      <Button Name="button12" Grid.Column="1" Grid.Row="3" Background="Peru" >button12</Button>
+      <Button Name="button11" Grid.Column="0" Grid.Row="3" Background="Peru" >button11</Button>
+      <Button Name="button10" Grid.Column="4" Grid.Row="2" Background="Peru" >button10</Button>
+      <Button Name="button9" Grid.Column="3" Grid.Row="2" Background="Peru" >button9</Button>
+      <Button Name="button8" Grid.Column="2" Grid.Row="2" Background="Peru" >button8</Button>
+      <Button Name="button7" Grid.Column="1" Grid.Row="2" Background="Peru" >button7</Button>
+      <Button Name="button6" Grid.Column="0" Grid.Row="2" Background="Peru" >button6</Button>
+      <Button Name="button5" Grid.Column="4" Grid.Row="1" Background="Peru" >button5</Button>
+      <Button Name="button4" Grid.Column="3" Grid.Row="1" Background="Peru" >button4</Button>
+      <Button Name="button3" Grid.Column="2" Grid.Row="1" Background="Peru" >button3</Button>
+      <Button Name="button2" Grid.Column="1" Grid.Row="1" Background="Peru" >button2</Button>
+      <Button Name="button1" Grid.Column="0" Grid.Row="1" Background="Peru" >button1</Button>
+    </Grid>
+    <Border Name="WorldTextPanel" Height="495" Width="906" Background="MediumOrchid" Margin="336,-5,22,191" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
+      <TextBox Name="WorldText" Height="487" Width="898" Background="Thistle" />
+    </Border>
   </Panel>
 </Window>

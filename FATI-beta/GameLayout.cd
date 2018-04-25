@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="FATI_beta.Program">
+  <Class Name="FATIbeta.Program">
     <Position X="13.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAQAAAAACAAAAAAAAAAAAAAQAABAAIAAA=</HashCode>
@@ -10,28 +10,28 @@
       <Field Name="MainGame" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="FATI_beta.TestFormX" Collapsed="true">
+  <Class Name="FATIbeta.TestFormX" Collapsed="true">
     <Position X="36.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>cDARARAAACAAKBAJBBCIGIACAMw7CRD8AAgQQQIQAAs=</HashCode>
       <FileName>TestFormX.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.BaseAttackClass">
+  <Class Name="FATIbeta.JsonClasses.BaseAttackClass">
     <Position X="10.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
       <FileName>src\JsonClasses\BaseAttackClass.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.BodyPartBaseClass">
+  <Class Name="FATIbeta.JsonClasses.BodyPartBaseClass">
     <Position X="15" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>src\JsonClasses\BodyPartBaseClass.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.CharaterClass">
+  <Class Name="FATIbeta.JsonClasses.CharaterClass">
     <Position X="24" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAACAAAAAAACAAAAAAICAgBAAAAAAAFAAAAAgAAAAA=</HashCode>
@@ -41,28 +41,28 @@
       <Field Name="BodyParts" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.EnemyClass">
+  <Class Name="FATIbeta.JsonClasses.EnemyClass">
     <Position X="21.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>src\JsonClasses\EnemyClass.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.EventClass">
+  <Class Name="FATIbeta.JsonClasses.EventClass">
     <Position X="8.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>src\JsonClasses\EventClass.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.ItemClass">
+  <Class Name="FATIbeta.JsonClasses.ItemClass">
     <Position X="12.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>src\JsonClasses\ItemClass.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.Location">
+  <Class Name="FATIbeta.JsonClasses.Location">
     <Position X="17.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAABAAAAAAAAAAAACAAAAAAAAAAAAAAAAiAAAAA=</HashCode>
@@ -75,42 +75,42 @@
       <Field Name="Inventory" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.LocationConnections">
+  <Class Name="FATIbeta.JsonClasses.LocationConnections">
     <Position X="28.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>src\JsonClasses\Location.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.MainGameObject" Collapsed="true">
+  <Class Name="FATIbeta.JsonClasses.MainGameObject" Collapsed="true">
     <Position X="19.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>src\JsonClasses\MainGameObject.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.NPCClass">
+  <Class Name="FATIbeta.JsonClasses.NPCClass">
     <Position X="24" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>src\JsonClasses\NPCClass.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.PlayerClass">
+  <Class Name="FATIbeta.JsonClasses.PlayerClass">
     <Position X="26.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>src\JsonClasses\PlayerClass.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.TransformationBook" Collapsed="true">
+  <Class Name="FATIbeta.JsonClasses.TransformationBook" Collapsed="true">
     <Position X="19.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAAIIAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>src\JsonClasses\TransformationBook.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.JsonClasses.TransformationLibrary">
+  <Class Name="FATIbeta.JsonClasses.TransformationLibrary">
     <Position X="30.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -120,14 +120,14 @@
       <Field Name="Books" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="FATI_beta.Mechanics.AssetLoading" Collapsed="true">
+  <Class Name="FATIbeta.Mechanics.AssetLoading" Collapsed="true">
     <Position X="33.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAEABAA=</HashCode>
       <FileName>src\Mechanics\AssetLoading.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.Mechanics.JsonMapping">
+  <Class Name="FATIbeta.Mechanics.JsonMapping">
     <Position X="19.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AkAEAAACACAASEAAAAIBAAAQAkFAAAAAVAAAAACAKAA=</HashCode>
@@ -148,7 +148,7 @@
       <Field Name="TransformationLibraries" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="FATI_beta.Mechanics.MainGameController" BaseTypeListCollapsed="true">
+  <Class Name="FATIbeta.Mechanics.MainGameController" BaseTypeListCollapsed="true">
     <Position X="16.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAACAAQAAAAQAAAAAAAAAEAgAIAAA=</HashCode>
@@ -160,28 +160,28 @@
     </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="FATI_beta.Mechanics.RandomNumbers" Collapsed="true">
+  <Class Name="FATIbeta.Mechanics.RandomNumbers" Collapsed="true">
     <Position X="35" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>src\Mechanics\RandomNumbers.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.Mechanics.RPGDice" Collapsed="true">
+  <Class Name="FATIbeta.Mechanics.RPGDice" Collapsed="true">
     <Position X="35" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAIIAAAAAAAAAAA=</HashCode>
       <FileName>src\Mechanics\RPGDice.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.UI.RealUI" Collapsed="true">
+  <Class Name="FATIbeta.UI.RealUI" Collapsed="true">
     <Position X="36.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAIA=</HashCode>
       <FileName>src\UI\RealUI.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FATI_beta.UI.RealUI_Glade" Collapsed="true">
+  <Class Name="FATIbeta.UI.RealUI_Glade" Collapsed="true">
     <Position X="33.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>cCgQIRAAAgEACBEBBBAcHIIAAMw7CQD8AAAQQQIQEAs=</HashCode>

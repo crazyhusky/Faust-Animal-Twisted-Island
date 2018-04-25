@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FATI-beta", "FATI-beta\FATI-beta.csproj", "{512327D8-E49E-412B-B6FA-E461260669D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FATIbeta", "FATI-beta\FATIbeta.csproj", "{512327D8-E49E-412B-B6FA-E461260669D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpPhysFS", "SharpPhysFS\SharpPhysFS\SharpPhysFS.csproj", "{AD6AA182-8C7F-4F3A-AAEF-7BD993D1D262}"
 EndProject

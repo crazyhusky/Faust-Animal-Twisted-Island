@@ -5,18 +5,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Avalonia;
+using Avalonia.Logging.Serilog;
 
 namespace FATIbeta
 {
     class Program
     {
         protected static CoreEngine.MainGameController MainGame;
+
         [STAThread]
         static void Main(string[] args)
         {
             GameInit();
-            RealUI.test2();
+            //RealUI.test2();
             //RunWindow();
+            RunAlavlonUI();
             GameDeInit();
         }
 
@@ -31,10 +35,22 @@ namespace FATIbeta
         {
             MainGame.Dispose();
         }
+
         static void RunWindow()
         {
-            Application.EnableVisualStyles();
-            Application.Run(new TestFormX());
+            System.Windows.Forms.Application.EnableVisualStyles();
+            System.Windows.Forms.Application.Run(new TestFormX());
+        }
+
+        public static AppBuilder BuildAvaloniaApp()
+        {
+            return AppBuilder.Configure<src.UI.App>().UseSkia().UseMonoMac();
+        }
+
+        static void RunAlavlonUI()
+        {
+            BuildAvaloniaApp().Start<src.UI.MainWindow>();
+
         }
     }
 }
