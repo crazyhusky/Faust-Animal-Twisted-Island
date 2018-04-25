@@ -5,10 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FATI_beta.UI;
-using SharpPhysFS;
 
-namespace FATI_beta
+namespace FATIbeta
 {
     class Program
     {

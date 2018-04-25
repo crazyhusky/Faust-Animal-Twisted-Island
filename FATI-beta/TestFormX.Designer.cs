@@ -1,4 +1,4 @@
-﻿namespace FATI_beta
+﻿namespace FATIbeta
 {
     partial class TestFormX
     {

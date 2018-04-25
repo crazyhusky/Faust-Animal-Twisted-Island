@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using FATI_beta.CoreEngine;
+using FATIbeta.CoreEngine;
 
-namespace FATI_beta.JsonClasses
+namespace FATIbeta.JsonClasses
 {
     public class Location: MainGameObject
     {

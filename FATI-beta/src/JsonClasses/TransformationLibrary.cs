@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FATI_beta.JsonClasses
+namespace FATIbeta.JsonClasses
 {
     public class TransformationLibrary : MainGameObject
     {

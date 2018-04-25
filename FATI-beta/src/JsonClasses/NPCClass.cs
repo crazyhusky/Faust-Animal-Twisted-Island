@@ -1,4 +1,4 @@
-﻿namespace FATI_beta.JsonClasses
+﻿namespace FATIbeta.JsonClasses
 {
     public class NPCClass : CharaterClass
     {

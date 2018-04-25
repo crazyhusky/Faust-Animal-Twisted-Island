@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 
-namespace FATI_beta.CoreEngine
+namespace FATIbeta.CoreEngine
 {
     public static class RandomNumbers
     {

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using FATI_beta.JsonClasses;
+using FATIbeta.JsonClasses;
 using Newtonsoft.Json;
 using SharpPhysFS;
 
-namespace FATI_beta.CoreEngine
+namespace FATIbeta.CoreEngine
 {
     class AssetLoading
     {

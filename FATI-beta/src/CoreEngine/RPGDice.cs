@@ -1,4 +1,4 @@
-﻿namespace FATI_beta.CoreEngine
+﻿namespace FATIbeta.CoreEngine
 {
     public class RPGDice
     {

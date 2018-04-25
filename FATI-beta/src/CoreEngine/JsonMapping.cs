@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using FATI_beta.JsonClasses;
+using FATIbeta.JsonClasses;
 
-namespace FATI_beta.CoreEngine
+namespace FATIbeta.CoreEngine
 {
     public class JsonMapping
     {
