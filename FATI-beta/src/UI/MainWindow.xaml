@@ -1,4 +1,4 @@
-<Window x:Class="FATI_beta.UI.TestFormX2" xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="TestFormX2" Height="681" Width="1264">
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="TestFormX2" Height="681" Width="1264">
   <Panel Background="LightSteelBlue" Height="681" Width="1264">
     <Canvas Name="BaseActionPanel" Height="82" Width="330" Background="DarkOrange" Margin="0,579,934,20" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
       <Button Name="btnOptions" Height="33" Width="140" Background="PeachPuff" Click="btnOptions_Click" Margin="153,-12,971,660" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Options</Button>
@@ -34,7 +34,6 @@
     </Canvas>
     <Canvas Name="PlayerDescriptionPanel" Height="408" Width="330" Margin="0,97,934,176" Background="#FFC080" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
       <TextBox Name="PlayerDescription" Height="400" Width="322" Background="PeachPuff" Margin="-7,-12,949,293" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBox>
-      <!-- {DynamicResource FromArgb(255, 192, 128)} -->
     </Canvas>
     <Canvas Name="GenericButtonPanel" Height="167" Width="906" Background="MediumSeaGreen" Margin="336,494,22,20" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
       <Button Name="button12" Height="34" Width="170" Background="Peru" Margin="180,63,914,584" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button12</Button>
@@ -58,8 +57,8 @@
       <Button Name="button10" Height="34" Width="170" Background="Peru" Margin="708,26,386,621" HorizontalAlignment="Right" VerticalAlignment="Bottom" >button10</Button>
       <Button Name="buttonCmd2" Height="34" Width="170" Background="PeachPuff" Margin="180,111,914,536" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Inventory</Button>
     </Canvas>
-    <Canvas Name="WorldTextPanel" Height="495" Width="906" Background="MediumOrchid" Margin="336,-5,22,191" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
-      <TextBox Name="WorldText" Height="487" Width="898" Background="Thistle" Margin="-7,-12,373,206" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
-    </Canvas>
+    <Panel Name="WorldTextPanel" Height="495" Width="906" Background="MediumOrchid" Margin="336,-5,22,191" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
+      <TextBox Name="WorldText" Height="487" Width="898" Background="Thistle" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+    </Panel>
   </Panel>
 </Window>
