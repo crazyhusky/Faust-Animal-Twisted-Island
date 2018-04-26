@@ -3,6 +3,7 @@ using System;
 using System.Net;
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.Primitives;
 using Avalonia.Controls.Remote;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
@@ -38,7 +39,7 @@ namespace FATIbeta.src.UI
         }
         public void btnNewGame_Click(object sender, RoutedEventArgs args)
         {
-            
+            this.FindControl<Popup>("InputPopup").Open();
         }
 
     }
