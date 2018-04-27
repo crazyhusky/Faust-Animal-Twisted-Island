@@ -237,7 +237,7 @@
     <Compile Include="src\CoreEngine\RandomNumbers.cs" />
     <Compile Include="src\CoreEngine\RPGDice.cs" />
   </ItemGroup>
-    <ItemGroup>
+  <ItemGroup>
     <Compile Include="src\UI\App.xaml.cs">
       <DependentUpon>src\UI\App.xaml</DependentUpon>
     </Compile>

@@ -89,7 +89,11 @@
     <Border Name="PlayerDescriptionPanel" Height="408" Width="330" Margin="0,97,934,176" Background="#FFC080" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
       <TextBox Name="PlayerDescription" Height="400" Width="322" Background="PeachPuff" IsReadOnly="True" />
     </Border>
-    <Grid Name="GenericButtonPanel" Height="167" Width="906" Background="MediumSeaGreen" Margin="336,494,22,20" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
+    <DockPanel Height="662" Width="906" Margin="336,-5,22,20" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+      <Border Name="WorldTextPanel" Height="495" Width="906" Background="MediumOrchid" DockPanel.Dock="Top" >
+        <TextBox Name="WorldText" Height="487" Width="898" Background="Thistle" IsReadOnly="True" />
+      </Border>
+      <Grid Name="GenericButtonPanel" Height="167" Width="906" Background="MediumSeaGreen" DockPanel.Dock="Top" >
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
@@ -125,9 +129,10 @@
       <Button Name="button2" Classes="GenericBtn" Grid.Column="1" Grid.Row="1" Background="Peru" >button2</Button>
       <Button Name="button1" Classes="GenericBtn" Grid.Column="0" Grid.Row="1" Background="Peru" >button1</Button>
     </Grid>
-    <Border Name="WorldTextPanel" Height="495" Width="906" Background="MediumOrchid" Margin="336,-5,22,191" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
-      <TextBox Name="WorldText" Height="487" Width="898" Background="Thistle" IsReadOnly="True" />
-    </Border>
+    </DockPanel>
+
+    
+    
     <Popup Name="InputPopup" Width="300" Height="50" StaysOpen="False" PlacementMode="Pointer">
       <WrapPanel Background="LightSteelBlue" Orientation="Vertical">
         <TextBlock Name="InputDescriptionString">Please Input your Data here</TextBlock>
