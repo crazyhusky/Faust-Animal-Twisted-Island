@@ -19,6 +19,10 @@ namespace FATIbeta.src.UI
         public MainWindow()
         {
             InitializeComponent();
+            this.FindControl<Button>("btnOptions").Click += btnOptions_Click;
+            this.FindControl<Button>("btnNewGame").Click += btnNewGame_Click;
+            this.FindControl<Button>("btnLoad").Click += btnLoad_Click;
+            this.FindControl<Button>("btnSave").Click += btnSave_Click;
         }
 
         private void InitializeComponent()
