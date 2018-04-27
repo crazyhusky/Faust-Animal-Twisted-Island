@@ -1,4 +1,6 @@
-<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="TestFormX2" Height="681" Width="1264">
+<Window x:Class="FATIbeta.UI.MainWindow" xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ui="clr-namespace:FATIbeta.src.UI"
+        Title="TestFormX2" Height="681" Width="1264">
   <Panel Background="LightSteelBlue" Height="681" Width="1264" >
     <Grid Name="BaseActionPanel" Height="82" Width="330" Background="DarkOrange" Margin="0,579,934,20" HorizontalAlignment="Right" VerticalAlignment="Bottom">
       <Grid.ColumnDefinitions>
@@ -14,31 +16,31 @@
       <Button Grid.Column="1" Grid.Row="0" Name="btnLoad" Height="33" Width="140" Background="PeachPuff" >Load</Button>
       <Button Grid.Column="1" Grid.Row="1" Name="btnSave" Height="33" Width="140" Background="PeachPuff" >Save</Button>
     </Grid>
-    <WrapPanel Name="StatsPanel2" Height="65" Width="330" Background="SteelBlue" Margin="0,509,934,107" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+    <WrapPanel Name="StatsPanel" Height="65" Width="330" Background="SteelBlue" Margin="0,509,934,107" HorizontalAlignment="Right" VerticalAlignment="Bottom">
       <WrapPanel Orientation="Vertical" Margin="3">
         <TextBlock HorizontalAlignment="Center">Time</TextBlock>
         <WrapPanel Orientation="Horizontal">
-          <TextBlock Name="HourName" Width="50" FontSize="11" FontFamily="Microsoft Sans Serif" >Hour</TextBlock>
-          <TextBlock Name="HourValue" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif" >0</TextBlock>
+          <TextBlock Name="HourName" Width="50" Classes="FATI" >Hour</TextBlock>
+          <TextBlock Name="HourValue" Width="25" Classes="FATI" >0</TextBlock>
         </WrapPanel>
         <WrapPanel Orientation="Horizontal">
-          <TextBlock Name="DayName" Width="45" FontSize="11" FontFamily="Microsoft Sans Serif" >Day</TextBlock>
-          <TextBlock Name="DayValue" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif"  >0</TextBlock>
+          <TextBlock Name="DayName" Width="45" Classes="FATI" >Day</TextBlock>
+          <TextBlock Name="DayValue" Width="25" Classes="FATI"  >0</TextBlock>
         </WrapPanel>
       </WrapPanel>
       <WrapPanel Orientation="Vertical" Margin="3">
         <TextBlock HorizontalAlignment="Center">Player Stats</TextBlock>
         <WrapPanel Orientation="Horizontal">
-          <TextBlock Name="CoinsName" Width="56" FontSize="11" FontFamily="Microsoft Sans Serif">Coins</TextBlock>
-          <TextBlock Name="CoinsValue" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif" >0</TextBlock>
+          <TextBlock Name="CoinsName" Width="56" Classes="FATI">Coins</TextBlock>
+          <TextBlock Name="CoinsValue" Width="25" Classes="FATI" >0</TextBlock>
         </WrapPanel>
         <WrapPanel Orientation="Horizontal">
-          <TextBlock Name="PlayerExplevelName" Width="55" FontSize="11" FontFamily="Microsoft Sans Serif" >Level</TextBlock>
-          <TextBlock Name="labelCoins" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif" >0</TextBlock>
+          <TextBlock Name="PlayerExplevelName" Width="55" Classes="FATI" >Level</TextBlock>
+          <TextBlock Name="labelCoins" Width="25" Classes="FATI" >0</TextBlock>
         </WrapPanel>
         <WrapPanel Orientation="Horizontal">
-          <TextBlock Name="ExpName" Width="43" FontSize="11" FontFamily="Microsoft Sans Serif" >Exp</TextBlock>
-          <TextBlock Name="ExpValue" Width="25" FontSize="11" FontFamily="Microsoft Sans Serif" >0</TextBlock>
+          <TextBlock Name="ExpName" Width="43" Classes="FATI" >Exp</TextBlock>
+          <TextBlock Name="ExpValue" Width="25" Classes="FATI" >0</TextBlock>
         </WrapPanel>
       </WrapPanel>
     </WrapPanel>
@@ -58,31 +60,31 @@
         <ColumnDefinition Width="Auto" />
       </Grid.ColumnDefinitions>
       <WrapPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
-        <TextBlock Name="StrengthName" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >Strenght</TextBlock>
-        <TextBlock Name="StrenghtValue" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >0</TextBlock>
+        <TextBlock Name="StrengthName" Classes="FATI" Margin="3" >Strenght</TextBlock>
+        <TextBlock Name="StrenghtValue" Classes="FATI" Margin="3" >0</TextBlock>
       </WrapPanel>
       <WrapPanel Grid.Column="0" Grid.Row="1" Orientation="Horizontal">
-        <TextBlock Name="ToughnessName"  FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >Toughness</TextBlock>
-        <TextBlock Name="ToughnessValue"  FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >0</TextBlock>
+        <TextBlock Name="ToughnessName"  Classes="FATI" Margin="3" >Toughness</TextBlock>
+        <TextBlock Name="ToughnessValue"  Classes="FATI" Margin="3" >0</TextBlock>
       </WrapPanel>
       <WrapPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal" >
-        <TextBlock Name="SpeedName"  FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >Speed</TextBlock>
-        <TextBlock Name="SpeedValue" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >0</TextBlock>
+        <TextBlock Name="SpeedName"  Classes="FATI" Margin="3" >Speed</TextBlock>
+        <TextBlock Name="SpeedValue" Classes="FATI" Margin="3" >0</TextBlock>
       </WrapPanel>
       <WrapPanel Grid.Column="0" Grid.Row="3" Orientation="Horizontal">
-        <TextBlock Name="LibidoName"  FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >Libido</TextBlock>
-        <TextBlock Name="LibidoValue"  FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >0</TextBlock>
+        <TextBlock Name="LibidoName"  Classes="FATI" Margin="3" >Libido</TextBlock>
+        <TextBlock Name="LibidoValue" Classes="FATI" Margin="3" >0</TextBlock>
       </WrapPanel>
       <WrapPanel Grid.Column="3" Grid.Row="0" Orientation="Horizontal">
-        <TextBlock Name="HPName" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >HP</TextBlock>
-        <TextBlock Name="HPValue" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >0</TextBlock>
+        <TextBlock Name="HPName" Classes="FATI" Margin="3" >HP</TextBlock>
+        <TextBlock Name="HPValue" Classes="FATI" Margin="3" >0</TextBlock>
       </WrapPanel>
       <ProgressBar Name="progressBarHP" Grid.Column="3" Grid.Row="1" Width="100" Foreground="Purple" Margin="3" ></ProgressBar>
       <WrapPanel Grid.Column="3" Grid.Row="3" Orientation="Horizontal">
-        <TextBlock Name="LustName"  FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >Lust</TextBlock>
-        <TextBlock Name="LustValue" FontSize="11" FontFamily="Microsoft Sans Serif" Margin="3" >0</TextBlock>
+        <TextBlock Name="LustName"  Classes="FATI" Margin="3" >Lust</TextBlock>
+        <TextBlock Name="LustValue" Classes="FATI" Margin="3" >0</TextBlock>
       </WrapPanel>
-      <ProgressBar Name="progressBarLust" Grid.Column="3" Grid.Row="4" Width="100" Margin="3" ></ProgressBar>
+      <ProgressBar Name="progressBarLust" Grid.Column="3" Grid.Row="4" Width="100" Foreground="DeepPink" Margin="3" ></ProgressBar>
     </Grid>
     <Border Name="PlayerDescriptionPanel" Height="408" Width="330" Margin="0,97,934,176" Background="#FFC080" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
       <TextBox Name="PlayerDescription" Height="400" Width="322" Background="PeachPuff" IsReadOnly="True" />
@@ -132,13 +134,16 @@
         <TextBox Name="InputBox" Width="200"></TextBox>
       </WrapPanel>
     </Popup>
-    
 
   </Panel>
   <Window.Styles>
     <Style Selector="Button.GenericBtn" >
       <Setter Property="Width" Value="170" />
       <Setter Property="Height" Value="34" />
+    </Style>
+    <Style Selector="TextBlock.FATI">
+      <Setter Property="FontSize" Value="11"/>
+      <Setter Property="FontFamily" Value="Microsoft Sans Serif"></Setter>
     </Style>
   </Window.Styles>
 </Window>
