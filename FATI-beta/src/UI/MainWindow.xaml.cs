@@ -23,7 +23,7 @@ namespace FATIbeta.src.UI
 
         private void InitializeComponent()
         {
-            AvaloniaXamlLoader.Load(this);
+            AvaloniaXamlLoaderPortableXaml.Load(this);
         }
         public void btnOptions_Click(object sender, RoutedEventArgs args)
         {
