@@ -28,7 +28,7 @@ Area Unlocks
 -
 You need to visit new areas to progress in the game.
 However they require you to be certain levels to visit places otherwise you may not be strong enough to fight the foes there.
-To find these new areas hit explore when in that area at a certain level or higher and it'll unlock it.
+To find these new areas you must do quests unlock them and be that level or higher.
 
 Area 1
 - Ruined Town(Hub) - Starting
