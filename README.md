@@ -30,44 +30,40 @@ You need to visit new areas to progress in the game.
 However they require you to be certain levels to visit places otherwise you may not be strong enough to fight the foes there.
 To find these new areas hit explore when in that area at a certain level or higher and it'll unlock it.
 
-Ruined Town(Hub) - Starting
+Area 1
+-Ruined Town(Hub) - Starting
+-Local Park - Automically
+-Super Market - Level 2
+-Town outskirts - Level 4
+-Forest - Level 7
 
-Local Park - Automically
+Area 2
+-Farming Village(Hub)  - Level 10
+-Farm Pastures - Level 10
+-Quiet Lake  - Level 12
+-Old factory - Level 15
+- Cursed woods - Level 18
 
-Super Market - Level 2
+Area 3
+-Miner's Camp (Hub) - Level 20
+-Mine  - Level 20
+-Cliffside - Level 23
+-Underground cave - Level 26
+-Mountain Peak - Level 29
 
-Town outskirts - Level 4
+Area 4
+-Small Town (Hub) - Level 32
+-Trailer park - Level 32
+-Wilderness - Level 35
+-Synthetic Jungle - Level 38
+-Marshland - Level 41
 
-Forest - Level 7
-
-Farming Village(Hub)  - Level 10
-
-Farm Pastures - Level 10
-
-Quiet Lake  - Level 12
-
-Old factory - Level 15
-
-Cursed woods - Level 18
-
-
-Miner's Camp (Hub) - Level 20
-Mine  - Level 20
-Cliffside - Level 23
-Underground cave - Level 26
-Mountain Peak - Level 29
-
-Small Town (Hub) - Level 32
-Trailer park - Level 32
-Wilderness - Level 35
-Synthetic Jungle - Level 38
-Marshland - Level 41
-
-Shrine(Hub)-Level 44
-Dojo - Level 44
-Outback - Level 48
-Coastline - Level 51
-Secret lab - Level 50
+Area 5
+-Shrine(Hub)-Level 43
+-Dojo - Level 43
+-Outback - Level 45
+-Coastline - Level 48
+-Secret lab - Level 50
 
 ---
 
