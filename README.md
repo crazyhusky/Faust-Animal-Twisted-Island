@@ -47,8 +47,8 @@ Area 2
 Area 3
 - Miner's Camp (Hub) - Level 20
 - Mine  - Level 20
-- Cliffside - Level 23
-- Underground cave - Level 26
+- Underground cave  - Level 23
+- Rocky Hillside - Level 26
 - Mountain Peak - Level 29
 
 Area 4
