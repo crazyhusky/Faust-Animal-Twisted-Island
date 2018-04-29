@@ -61,7 +61,7 @@ Area 4
 Area 5
 - Shrine(Hub)-Level 43
 - Dojo - Level 43
-- Outback - Level 45
+- Bamboo Forest - Level 45
 - Coastline - Level 48
 - Secret lab - Level 50
 
