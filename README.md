@@ -31,12 +31,11 @@ However they require you to be certain levels to visit places otherwise you may 
 To find these new areas hit explore when in that area at a certain level or higher and it'll unlock it.
 
 Area 1
--
--Ruined Town(Hub) - Starting
--Local Park - Automically
--Super Market - Level 2
--Town outskirts - Level 4
--Forest - Level 7
+- Ruined Town(Hub) - Starting
+- Local Park - Automically
+- Super Market - Level 2
+- Town outskirts - Level 4
+- Forest - Level 7
 
 Area 2
 - Farming Village(Hub)  - Level 10
@@ -46,25 +45,25 @@ Area 2
 - Cursed woods - Level 18
 
 Area 3
--Miner's Camp (Hub) - Level 20
--Mine  - Level 20
--Cliffside - Level 23
--Underground cave - Level 26
--Mountain Peak - Level 29
+- Miner's Camp (Hub) - Level 20
+- Mine  - Level 20
+- Cliffside - Level 23
+- Underground cave - Level 26
+- Mountain Peak - Level 29
 
 Area 4
--Small Town (Hub) - Level 32
--Trailer park - Level 32
--Wilderness - Level 35
--Synthetic Jungle - Level 38
--Marshland - Level 41
+- Small Town (Hub) - Level 32
+- Trailer park - Level 32
+- Wilderness - Level 35
+- Synthetic Jungle - Level 38
+- Marshland - Level 41
 
 Area 5
--Shrine(Hub)-Level 43
--Dojo - Level 43
--Outback - Level 45
--Coastline - Level 48
--Secret lab - Level 50
+- Shrine(Hub)-Level 43
+- Dojo - Level 43
+- Outback - Level 45
+- Coastline - Level 48
+- Secret lab - Level 50
 
 ---
 
