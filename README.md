@@ -31,6 +31,7 @@ However they require you to be certain levels to visit places otherwise you may 
 To find these new areas hit explore when in that area at a certain level or higher and it'll unlock it.
 
 Area 1
+-
 -Ruined Town(Hub) - Starting
 -Local Park - Automically
 -Super Market - Level 2
