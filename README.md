@@ -39,10 +39,10 @@ Area 1
 -Forest - Level 7
 
 Area 2
--Farming Village(Hub)  - Level 10
--Farm Pastures - Level 10
--Quiet Lake  - Level 12
--Old factory - Level 15
+- Farming Village(Hub)  - Level 10
+- Farm Pastures - Level 10
+- Quiet Lake  - Level 12
+- Old factory - Level 15
 - Cursed woods - Level 18
 
 Area 3
