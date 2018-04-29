@@ -30,16 +30,36 @@ You need to visit new areas to progress in the game.
 However they require you to be certain levels to visit places otherwise you may not be strong enough to fight the foes there.
 To find these new areas hit explore when in that area at a certain level or higher and it'll unlock it.
 
-- Beach - Explore from the camp Level 2 or higher
-- Farm - Explore fromcamp or visit Forest when Level 4 or higher
-- Boathouse - Explore from Beach when Level 5 or higher
-- Ruined Town -- Explore from camp when Level 5  or higher
-- Miner's hut - Explore Ruined Town when Level 10 or higher
-- Town - Explore Farm or visit Fields or Lake when Level 10 or higher
-- Underground cave -- Explore Mine when Level 15 or higher
-- Mountain -- Explore Cliffside when Level 15 or higher
-- Shrine -- Explore Outback when Level 20 or higher
-- Secret Lab -- Explore Underground cave When Level 25 
+Ruined Town(Hub) - Starting
+Local Park - Automically
+Super Market - Level 2
+Town outskirts - Level 4
+Forest - Level 7
+
+Farming Village(Hub)  - Level 10
+Farm Pastures - Level 10
+Quiet Lake  - Level 12
+Old factory - Level 15
+Cursed woods - Level 18
+
+Miner's Camp (Hub) - Level 20
+Mine  - Level 20
+Cliffside - Level 23
+Underground cave - Level 26
+Mountain Peak - Level 29
+
+Small Town (Hub) - Level 32
+Trailer park - Level 32
+Wilderness - Level 35
+Synthetic Jungle - Level 38
+Marshland - Level 41
+
+Shrine(Hub)-Level 44
+Dojo - Level 44
+Outback - Level 48
+Coastline - Level 51
+Secret lab - Level 50
+
 ---
 
 Battles
