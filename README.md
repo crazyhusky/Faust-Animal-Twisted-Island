@@ -31,16 +31,25 @@ However they require you to be certain levels to visit places otherwise you may 
 To find these new areas hit explore when in that area at a certain level or higher and it'll unlock it.
 
 Ruined Town(Hub) - Starting
+
 Local Park - Automically
+
 Super Market - Level 2
+
 Town outskirts - Level 4
+
 Forest - Level 7
 
 Farming Village(Hub)  - Level 10
+
 Farm Pastures - Level 10
+
 Quiet Lake  - Level 12
+
 Old factory - Level 15
+
 Cursed woods - Level 18
+
 
 Miner's Camp (Hub) - Level 20
 Mine  - Level 20
