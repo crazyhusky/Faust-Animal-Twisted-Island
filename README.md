@@ -33,7 +33,7 @@ To find these new areas you must do quests unlock them and be that level or high
 Area 1
 - Ruined Town(Hub) - Starting
 - Local Park - Automically
-- Super Market - Level 2
+- Tourist District - Level 2
 - Town outskirts - Level 4
 - Forest - Level 7
 
