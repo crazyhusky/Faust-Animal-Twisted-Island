@@ -44,7 +44,7 @@ namespace FATIbeta
 
         public static AppBuilder BuildAvaloniaApp()
         {
-            return AppBuilder.Configure<src.UI.App>().UseSkia().UseMonoMac();
+            return AppBuilder.Configure<src.UI.App>().LogToDebug().UsePlatformDetect();
         }
 
         static void RunAlavlonUI()
