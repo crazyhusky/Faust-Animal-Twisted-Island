@@ -12,7 +12,7 @@ namespace FATIbeta
 {
     class Program
     {
-        protected static CoreEngine.MainGameController MainGame;
+        public static CoreEngine.MainGameController MainGame;
 
         [STAThread]
         static void Main(string[] args)

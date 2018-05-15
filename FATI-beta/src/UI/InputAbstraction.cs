@@ -1,4 +1,5 @@
 ﻿using System;
+using FATIbeta.CoreEngine;
 
 namespace FATIbeta.src.UI
 {
@@ -7,6 +8,11 @@ namespace FATIbeta.src.UI
         public static void GameTick(object sender, EventArgs eventArgs)
         {
             
+        }
+
+        public static void GameInputUpdate()
+        {
+            Program.MainGame.getGameLoop().GameLoopLoopTick();
         }
     }
 }

@@ -3,7 +3,7 @@ namespace FATIbeta.CoreEngine
 {
     public class GameLoop
     {
-        public void GameLoopLoop()
+        public void GameLoopLoopTick()
         {
             UpdateWorld();
         }

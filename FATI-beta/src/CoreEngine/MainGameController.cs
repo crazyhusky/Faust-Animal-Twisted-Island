@@ -41,6 +41,11 @@ namespace FATIbeta.CoreEngine
             SetupPackedData(Packed);
         }
 
+        public GameLoop getGameLoop()
+        {
+            return TheGameLoop;
+        }
+
         private void SetupPackedData(string baseDir)
         {
             //get all files in alphabetic order
