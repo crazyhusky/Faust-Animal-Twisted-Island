@@ -9,11 +9,13 @@ namespace FATIbeta.CoreEngine
     {
         private JsonMapping DefinedParts;
         private PhysFS filesystemLink;
+        private GameLoop TheGameLoop;
 
         public MainGameController()
         {
             DefinedParts = JsonMapping.Instance;
             filesystemLink = new PhysFS("");
+            TheGameLoop = new GameLoop();
         }
 
         public void LoadAssets()

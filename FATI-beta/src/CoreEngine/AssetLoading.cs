@@ -7,7 +7,7 @@ using SharpPhysFS;
 
 namespace FATIbeta.CoreEngine
 {
-    class AssetLoading
+    public class AssetLoading
     {
         public static void LoadFiles(PhysFS physFSInstance, JsonMapping Maps)
         {

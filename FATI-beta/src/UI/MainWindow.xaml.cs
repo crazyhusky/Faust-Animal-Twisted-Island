@@ -23,6 +23,9 @@ namespace FATIbeta.src.UI
             this.FindControl<Button>("btnNewGame").Click += btnNewGame_Click;
             this.FindControl<Button>("btnLoad").Click += btnLoad_Click;
             this.FindControl<Button>("btnSave").Click += btnSave_Click;
+            InitializeComponent();
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Tick += new EventHandler(InputAbstraction.GameTick);
         }
 
         private void InitializeComponent()

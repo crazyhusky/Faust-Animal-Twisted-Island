@@ -1,4 +1,6 @@
-﻿namespace FATIbeta.JsonClasses
+﻿using Jint.Parser.Ast;
+
+namespace FATIbeta.JsonClasses
 {
     public class MainGameObject
     {
@@ -9,6 +11,11 @@
         }
         public override string ToString() {
             return $"{Name}:{Description}:{GetType().Name}";
+        }
+
+        public void UpdateObject()
+        {
+
         }
     }
 }

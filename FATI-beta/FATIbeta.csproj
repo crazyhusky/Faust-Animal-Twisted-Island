@@ -214,9 +214,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\CoreEngine\GameLoop.cs" />
     <Compile Include="src\JsonClasses\BaseAttackClass.cs" />
     <Compile Include="src\JsonClasses\EventClass.cs" />
     <Compile Include="src\JsonClasses\Location.cs" />
+    <Compile Include="src\UI\InputAbstraction.cs" />
     <Compile Include="TestFormX.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +278,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="src\CoreEngine\AssetLoaderSubclasses\" />
     <Folder Include="src\Mechanics\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
