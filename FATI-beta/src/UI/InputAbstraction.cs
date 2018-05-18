@@ -10,7 +10,7 @@ namespace FATIbeta.src.UI
             
         }
 
-        public static void GameInputUpdate()
+        public static void GameInputUpdate(object sender, EventArgs eventArgs)
         {
             Program.MainGame.getGameLoop().GameLoopLoopTick();
         }

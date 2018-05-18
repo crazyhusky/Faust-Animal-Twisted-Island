@@ -1,11 +1,13 @@
 ﻿
 using System;
+using System.Linq;
 using System.Net;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.Controls.Remote;
 using Avalonia.Interactivity;
+using Avalonia.LogicalTree;
 using Avalonia.Markup.Xaml;
 using Avalonia.Remote.Protocol;
 using Avalonia.Remote.Protocol.Designer;
@@ -23,7 +25,6 @@ namespace FATIbeta.src.UI
             this.FindControl<Button>("btnNewGame").Click += btnNewGame_Click;
             this.FindControl<Button>("btnLoad").Click += btnLoad_Click;
             this.FindControl<Button>("btnSave").Click += btnSave_Click;
-            InitializeComponent();
             DispatcherTimer timer = new DispatcherTimer();
             timer.Tick += InputAbstraction.GameTick;
         }
@@ -31,6 +32,11 @@ namespace FATIbeta.src.UI
         private void InitializeComponent()
         {
             AvaloniaXamlLoaderPortableXaml.Load(this);
+
+            foreach (var logicalChild in this.GetLogicalChildren().OfType<Button>())
+            {
+                logicalChild.Click += InputAbstraction.GameInputUpdate;
+            }
         }
         public void btnOptions_Click(object sender, RoutedEventArgs args)
         {
