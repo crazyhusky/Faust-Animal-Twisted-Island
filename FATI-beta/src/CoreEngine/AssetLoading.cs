@@ -9,20 +9,7 @@ namespace FATIbeta.CoreEngine
 {
     public class AssetLoading
     {
-        public static void LoadFiles(PhysFS physFSInstance, JsonMapping Maps)
-        {
-            LoadResource("attacks",physFSInstance,Maps.Attacks);
-            LoadResource("bodyparts",physFSInstance,Maps.BodyParts);
-            LoadResource("events", physFSInstance, Maps.Events);
-            LoadResource("items", physFSInstance, Maps.Items);
-            LoadResource("npcs", physFSInstance, Maps.NPCList);
-            LoadResource("locations", physFSInstance, Maps.Locations);
-            LoadResource("enemies", physFSInstance, Maps.Enemies);
-            LoadResource("tfbooks", physFSInstance, Maps.TransformationBooks);
-            LoadResource("tflibrary", physFSInstance, Maps.TransformationLibraries);
-
-        }
-        public static void LoadResource<T>(String filenameToEnum, PhysFS physFSInstance, Dictionary<string, T> MapDictionary) where T: MainGameObject, new()
+        public void LoadResource<T>(String filenameToEnum, PhysFS physFSInstance, Dictionary<string, T> MapDictionary) where T: MainGameObject, new()
         {
             var FileList = physFSInstance.EnumerateFiles(filenameToEnum);
             foreach (var file in FileList)
@@ -32,16 +19,17 @@ namespace FATIbeta.CoreEngine
                 MapDictionary.Add(locationData.Name, locationData);
             }
         }
-        public static T DeserializeJsonFileData<T>(Stream s)
+        public T DeserializeJsonFileData<T>(Stream s)
         {
+            var deserializeOptions = new JsonSerializerSettings {DefaultValueHandling = DefaultValueHandling.Populate};
             using (var reader = new StreamReader(s))
             using (var jsonReader = new JsonTextReader(reader))
             {
-                JsonSerializer ser = new JsonSerializer();
+                JsonSerializer ser = JsonSerializer.CreateDefault(deserializeOptions);
                 return ser.Deserialize<T>(jsonReader);
             }
         }
-        public static T DeserializeJsonFile<T>(PhysFS physFSInstance, string filepath) where T : MainGameObject, new()
+        public T DeserializeJsonFile<T>(PhysFS physFSInstance, string filepath) where T : MainGameObject, new()
         {
             var filedata = physFSInstance.OpenRead(filepath);
             var jsonObject = DeserializeJsonFileData<T>(filedata);

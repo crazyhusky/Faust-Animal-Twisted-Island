@@ -20,7 +20,7 @@ namespace FATIbeta.CoreEngine
 
         public void LoadAssets()
         {
-            AssetLoading.LoadFiles(filesystemLink, DefinedParts);
+            AssetLoaderFactory.LoadFiles(filesystemLink, DefinedParts);
         }
 
         public void SetupFileSystems()
