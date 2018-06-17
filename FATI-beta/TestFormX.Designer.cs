@@ -83,13 +83,13 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.richTextBoxSub = new System.Windows.Forms.RichTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.labelStatus = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.labelfatigue = new System.Windows.Forms.Label();
+            this.progressBarfatigue = new System.Windows.Forms.ProgressBar();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.progressBarfatigue = new System.Windows.Forms.ProgressBar();
-            this.labelfatigue = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.labelStatus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -758,6 +758,54 @@
             this.panel4.Size = new System.Drawing.Size(330, 93);
             this.panel4.TabIndex = 7;
             // 
+            // labelStatus
+            // 
+            this.labelStatus.AutoSize = true;
+            this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatus.Location = new System.Drawing.Point(58, 44);
+            this.labelStatus.Name = "labelStatus";
+            this.labelStatus.Size = new System.Drawing.Size(38, 16);
+            this.labelStatus.TabIndex = 18;
+            this.labelStatus.Text = "Fine";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(1, 44);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(64, 16);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "Status - ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(112, 6);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(60, 16);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Fatigue";
+            // 
+            // labelfatigue
+            // 
+            this.labelfatigue.AutoSize = true;
+            this.labelfatigue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelfatigue.Location = new System.Drawing.Point(192, 6);
+            this.labelfatigue.Name = "labelfatigue";
+            this.labelfatigue.Size = new System.Drawing.Size(16, 16);
+            this.labelfatigue.TabIndex = 15;
+            this.labelfatigue.Text = "0";
+            // 
+            // progressBarfatigue
+            // 
+            this.progressBarfatigue.ForeColor = System.Drawing.Color.Gold;
+            this.progressBarfatigue.Location = new System.Drawing.Point(115, 25);
+            this.progressBarfatigue.Name = "progressBarfatigue";
+            this.progressBarfatigue.Size = new System.Drawing.Size(100, 10);
+            this.progressBarfatigue.TabIndex = 14;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.SteelBlue;
@@ -790,54 +838,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(330, 82);
             this.panel6.TabIndex = 9;
-            // 
-            // progressBarfatigue
-            // 
-            this.progressBarfatigue.ForeColor = System.Drawing.Color.Gold;
-            this.progressBarfatigue.Location = new System.Drawing.Point(115, 25);
-            this.progressBarfatigue.Name = "progressBarfatigue";
-            this.progressBarfatigue.Size = new System.Drawing.Size(100, 10);
-            this.progressBarfatigue.TabIndex = 14;
-            // 
-            // labelfatigue
-            // 
-            this.labelfatigue.AutoSize = true;
-            this.labelfatigue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelfatigue.Location = new System.Drawing.Point(192, 6);
-            this.labelfatigue.Name = "labelfatigue";
-            this.labelfatigue.Size = new System.Drawing.Size(16, 16);
-            this.labelfatigue.TabIndex = 15;
-            this.labelfatigue.Text = "0";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(112, 6);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 16);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "Fatigue";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(1, 44);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 16);
-            this.label13.TabIndex = 17;
-            this.label13.Text = "Status - ";
-            // 
-            // labelStatus
-            // 
-            this.labelStatus.AutoSize = true;
-            this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatus.Location = new System.Drawing.Point(58, 44);
-            this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(38, 16);
-            this.labelStatus.TabIndex = 18;
-            this.labelStatus.Text = "Fine";
             // 
             // TestFormX
             // 
@@ -922,12 +922,12 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.RichTextBox richTextBoxMain;
-        private System.Windows.Forms.RichTextBox richTextBoxSub;
         private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label labelfatigue;
         private System.Windows.Forms.ProgressBar progressBarfatigue;
+        private System.Windows.Forms.RichTextBox richTextBoxSub;
+        private System.Windows.Forms.RichTextBox richTextBoxMain;
     }
 }
