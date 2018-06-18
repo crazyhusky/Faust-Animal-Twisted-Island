@@ -1,4 +1,6 @@
 {
     "Name":"Person",
-    "Description":"Human"
+    "Description":"Human",
+    "Health":50,
+    "CurrentLocation":"Local-Park"
 }
