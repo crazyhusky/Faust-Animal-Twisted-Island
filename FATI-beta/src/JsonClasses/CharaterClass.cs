@@ -30,6 +30,7 @@ namespace FATIbeta.JsonClasses
 
         public CharaterClass()
         {
+            CurrentLocation = new Location();
         }
 
         public void MoveToLocation(Location newlocation)

@@ -23,7 +23,7 @@ namespace FATIbeta
 
         private void AttachEvents()
         {
-            var cooleo = this.Controls.OfType<Button>()
+            var cooleo = GetAllButtons(this)
                 .Where(button => !button.Name.Contains("btnNewGame"))
                 .Where(button => !button.Name.Contains("btnOptions"))
                 .Where(button => !button.Name.Contains("btnSave"))
@@ -98,6 +98,19 @@ namespace FATIbeta
             this.labelLust.Text = newLust.ToString();
             this.progressBarLust.Maximum = (int)maxLust;
             this.progressBarLust.Value = (int)newLust;
+        }
+        private IEnumerable<Button> GetAllButtons(Control container)
+        {
+            List<Button> controlList = new List<Button>();
+            foreach (Control c in container.Controls)
+            {
+                controlList.AddRange(GetAllButtons(c));
+                if (c is Button)
+                {
+                    controlList.Add((Button) c);
+                }
+            }
+            return controlList;
         }
     }
 }

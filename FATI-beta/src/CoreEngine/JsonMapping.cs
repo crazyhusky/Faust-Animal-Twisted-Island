@@ -28,6 +28,7 @@ namespace FATIbeta.CoreEngine
             Enemies = new Dictionary<string, EnemyClass>();
             BodyParts = new Dictionary<string, BodyPartBaseClass>();
             Events = new Dictionary<string, EventClass>();
+            BasePlayer = new PlayerClass();
         }
 
         public static JsonMapping Instance

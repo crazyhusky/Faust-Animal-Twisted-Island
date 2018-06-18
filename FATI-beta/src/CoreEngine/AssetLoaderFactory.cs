@@ -16,6 +16,7 @@ namespace FATIbeta.CoreEngine
             new AssetLoading().LoadResource("enemies", physFSInstance, Maps.Enemies);
             new AssetLoading().LoadResource("tfbooks", physFSInstance, Maps.TransformationBooks);
             new AssetLoading().LoadResource("tflibrary", physFSInstance, Maps.TransformationLibraries);
+            //new AssetLoading().LoadResource("player", physFSInstance, Maps.BasePlayer);
 
         }
     }
