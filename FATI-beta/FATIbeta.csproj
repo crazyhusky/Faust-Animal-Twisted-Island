@@ -225,6 +225,8 @@
     <Compile Include="src\JsonClasses\EventClass.cs" />
     <Compile Include="src\JsonClasses\Location.cs" />
     <Compile Include="src\UI\InputAbstraction.cs" />
+    <Compile Include="src\UI\UIConnectionInterface.cs" />
+    <Compile Include="src\UI\winformLink.cs" />
     <Compile Include="TestFormX.cs">
       <SubType>Form</SubType>
     </Compile>

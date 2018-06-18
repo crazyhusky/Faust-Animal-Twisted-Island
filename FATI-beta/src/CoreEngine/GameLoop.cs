@@ -1,4 +1,6 @@
 ﻿using System.Linq;
+using FATIbeta.src.UI;
+
 namespace FATIbeta.CoreEngine
 {
     public class GameLoop
@@ -6,6 +8,7 @@ namespace FATIbeta.CoreEngine
         public void GameLoopLoopTick()
         {
             UpdateWorld();
+            UpdateUI();
         }
 
         public void UpdateWorld()
@@ -27,6 +30,12 @@ namespace FATIbeta.CoreEngine
             {
                 Event.UpdateObject();
             }
+        }
+
+        public void UpdateUI()
+        {
+            winformLink.Instance.UpdatePlayerData(JsonMapping.Instance.BasePlayer);
+            winformLink.Instance.UpdateWorldDescription(JsonMapping.Instance.BasePlayer.CurrentLocation.Description);
         }
     }
 }

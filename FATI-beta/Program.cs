@@ -19,8 +19,8 @@ namespace FATIbeta
         {
             GameInit();
             //RealUI.test2();
-            //RunWindow();
-            RunAlavlonUI();
+            RunWindow();
+            //RunAlavlonUI();
             GameDeInit();
         }
 
@@ -38,8 +38,10 @@ namespace FATIbeta
 
         static void RunWindow()
         {
+            TestFormX window = new TestFormX();
             System.Windows.Forms.Application.EnableVisualStyles();
-            System.Windows.Forms.Application.Run(new TestFormX());
+            MainGame.gameUI = window.winformInterface;
+            System.Windows.Forms.Application.Run(window);
         }
 
         public static AppBuilder BuildAvaloniaApp()

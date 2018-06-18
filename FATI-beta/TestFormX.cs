@@ -18,6 +18,22 @@ namespace FATIbeta
         {
             InitializeComponent();
             winformInterface = new winformLink(this);
+            AttachEvents();
+        }
+
+        private void AttachEvents()
+        {
+            var cooleo = this.Controls.OfType<Button>()
+                .Where(button => !button.Name.Contains("btnNewGame"))
+                .Where(button => !button.Name.Contains("btnOptions"))
+                .Where(button => !button.Name.Contains("btnSave"))
+                .Where(button => !button.Name.Contains("btnLoad"))
+                .Where(button => !button.Name.Contains("buttonCmd1"))
+                .Where(button => !button.Name.Contains("buttonCmd2"));
+            foreach (var button in cooleo)
+            {
+                button.Click += InputAbstraction.GameInputUpdate;
+            }
         }
 
         private void label14_Click(object sender, EventArgs e)
@@ -68,14 +84,14 @@ namespace FATIbeta
         public void UpdatePlayerHealth(float newhealth, float maxhealth)
         {
             this.labelHP.Text = newhealth.ToString();
-            this.progressBarHP.Maximum = (int) maxhealth;
-            this.progressBarHP.Value = (int) newhealth;
+            this.progressBarHP.Maximum = (int)maxhealth;
+            this.progressBarHP.Value = (int)newhealth;
         }
         public void UpdatePlayerFatigue(float newFatique, float maxfatique)
         {
             this.labelfatigue.Text = newFatique.ToString();
-            this.progressBarfatigue.Maximum = (int) maxfatique;
-            this.progressBarHP.Value = (int) newFatique;
+            this.progressBarfatigue.Maximum = (int)maxfatique;
+            this.progressBarHP.Value = (int)newFatique;
         }
         public void UpdatePlayerLust(float newLust, float maxLust)
         {

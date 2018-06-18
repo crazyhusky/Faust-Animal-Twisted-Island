@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using FATIbeta.src.UI;
 using SharpPhysFS;
 
 namespace FATIbeta.CoreEngine
@@ -10,6 +11,7 @@ namespace FATIbeta.CoreEngine
         private JsonMapping DefinedParts;
         private PhysFS filesystemLink;
         private GameLoop TheGameLoop;
+        public winformLink gameUI;
 
         public MainGameController()
         {

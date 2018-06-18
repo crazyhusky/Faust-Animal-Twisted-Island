@@ -6,9 +6,12 @@ namespace FATIbeta.src.UI
     public class winformLink : UIConnectionInterface
     {
         private TestFormX winformInstance;
+        private static winformLink instance;
+
         public winformLink( TestFormX formInstance)
         {
             winformInstance = formInstance;
+            instance = this;
         }
 
         public void ClearPlayerDescriptionScreen()
@@ -33,5 +36,7 @@ namespace FATIbeta.src.UI
         {
             winformInstance.SetworldText(WorldDescription);
         }
+        public static winformLink Instance => instance;
     }
+
 }
