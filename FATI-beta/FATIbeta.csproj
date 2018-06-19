@@ -221,6 +221,7 @@
     </Compile>
     <Compile Include="src\CoreEngine\AssetLoaderFactory.cs" />
     <Compile Include="src\CoreEngine\GameLoop.cs" />
+    <Compile Include="src\CoreEngine\JsonGameRefrences.cs" />
     <Compile Include="src\JsonClasses\BaseAttackClass.cs" />
     <Compile Include="src\JsonClasses\EventClass.cs" />
     <Compile Include="src\JsonClasses\Location.cs" />
