@@ -6,16 +6,16 @@ namespace FATIbeta.CoreEngine
     public class JsonMapping
     {
         private static JsonMapping instance;
-        public Dictionary<string, BaseAttackClass> Attacks;
-        public Dictionary<string, NPCClass> NPCList;
-        public Dictionary<string, Location> Locations;
-        public Dictionary<string, ItemClass> Items;
-        public Dictionary<string, TransformationBook> TransformationBooks;
-        public Dictionary<string, TransformationLibrary> TransformationLibraries;
-        public Dictionary<string, EnemyClass> Enemies;
-        public Dictionary<string, EventClass> Events;
-        public Dictionary<string, BodyPartBaseClass> BodyParts;
-        public PlayerClass BasePlayer;
+        public Dictionary<string, BaseAttackClass> Attacks { get; set; }
+        public Dictionary<string, NPCClass> NPCList { get; set; }
+        public Dictionary<string, Location> Locations { get; set; }
+        public Dictionary<string, ItemClass> Items { get; set; }
+        public Dictionary<string, TransformationBook> TransformationBooks { get; set; }
+        public Dictionary<string, TransformationLibrary> TransformationLibraries { get; set; }
+        public Dictionary<string, EnemyClass> Enemies { get; set; }
+        public Dictionary<string, EventClass> Events { get; set; }
+        public Dictionary<string, BodyPartBaseClass> BodyParts { get; set; }
+        public PlayerClass BasePlayer { get; set; }
 
         private JsonMapping()
         {
