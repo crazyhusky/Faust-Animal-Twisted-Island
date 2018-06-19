@@ -2,5 +2,8 @@
     "Name":"Person",
     "Description":"Human",
     "Health":50,
-    "CurrentLocation":"Local-Park"
+    "CurrentLocation":"Local-Park",
+    "BodyParts":[
+        "test"
+    ]
 }
