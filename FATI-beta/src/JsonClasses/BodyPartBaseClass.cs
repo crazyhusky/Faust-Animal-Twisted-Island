@@ -7,5 +7,9 @@ namespace FATIbeta.JsonClasses
         public BodyPartBaseClass()
         {
         }
+        public new BodyPartBaseClass GetShallowCopy()
+        {
+            return this.MemberwiseClone() as BodyPartBaseClass;
+        }
     }
 }
