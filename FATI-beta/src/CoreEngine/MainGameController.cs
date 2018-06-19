@@ -48,6 +48,11 @@ namespace FATIbeta.CoreEngine
             return TheGameLoop;
         }
 
+        public JsonMapping GetJsonMappingInstance()
+        {
+            return DefinedParts;
+        }
+
         private void SetupPackedData(string baseDir)
         {
             //get all files in alphabetic order
