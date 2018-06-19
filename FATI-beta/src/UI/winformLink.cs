@@ -26,7 +26,7 @@ namespace FATIbeta.src.UI
 
         public void UpdatePlayerData(PlayerClass PlayerClassData)
         {
-            winformInstance.SetPlayerText(PlayerClassData.Description);
+            winformInstance.SetPlayerText(PlayerClassData.ToString());
             winformInstance.UpdatePlayerHealth(PlayerClassData.Health, PlayerClassData.MaxHealth);
             winformInstance.UpdatePlayerLust(PlayerClassData.Lust,PlayerClassData.MaxLust);
             winformInstance.UpdatePlayerFatigue(PlayerClassData.Fatique, PlayerClassData.MaxFatique);
