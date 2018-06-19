@@ -1,41 +1,69 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using FATIbeta.CoreEngine;
+using FATIbeta.src.CoreEngine;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace FATIbeta.JsonClasses
 {
     public class CharaterClass : MainGameObject
     {
-        private float health;
-        private float maxHealth;
-        private float lust;
-        private float maxlust;
-        private float fatique;
-        private float maxfatique;
-        private int coins;
-        private int level;
-        private List<BodyPartBaseClass> bodyParts;
-        private List<ItemClass> inventory;
-        private Location currentLocation;
+        [DefaultValue(100)]
+        public float Health { get; set; } = 100;
 
-        public float Health { get => health; set => health = value; }
-        public float MaxHealth { get => maxHealth; set => maxHealth = value; }
-        public float MaxLust { get => maxlust; set => maxlust = value; }
-        public float Lust { get => lust; set => lust = value; }
-        public float MaxFatique { get => maxfatique; set => maxfatique = value; }
-        public float Fatique { get => fatique; set => fatique = value; }
-        public int Coins { get => coins; set => coins = value; }
-        public int Level { get => level; set => level = value; }
-        public List<BodyPartBaseClass> BodyParts { get => bodyParts; set => bodyParts = value; }
-        public List<ItemClass> Inventory { get => inventory; set => inventory = value; }
-        public Location CurrentLocation { get => currentLocation; set => currentLocation = value; }
+        [DefaultValue(100)]
+        public float MaxHealth { get; set; } = 100;
+
+        [DefaultValue(100)]
+        public float MaxLust { get; set; } = 100;
+
+        [DefaultValue(0)]
+        public float Lust { get; set; } = 0;
+
+        [DefaultValue(100)]
+        public float MaxFatique { get; set; } = 100;
+
+        [DefaultValue(0)]
+        public float Fatique { get; set; } = 0;
+
+        [DefaultValue(0)]
+        public int Coins { get; set; } = 0;
+
+        [DefaultValue(0)]
+        public int Level { get; set; } = 0;
+        [JsonConverter(typeof(JsonGameRefrences.BodyPartRefrences))]
+        public List<BodyPartBaseClass> BodyParts { get; set; }
+
+        public List<ItemClass> Inventory { get; set; }
+        [JsonConverter(typeof(JsonGameRefrences.LocationRefrences))]
+        public Location CurrentLocation { get; set; } = new Location();
 
         public CharaterClass()
         {
-            CurrentLocation = new Location();
         }
 
         public void MoveToLocation(Location newlocation)
         {
             CurrentLocation = newlocation;
+        }
+
+        public override string ToString()
+        {
+            var newline = "\n";
+            var health = $"{Health}/{MaxHealth}";
+            var lust = $"{Lust}/{MaxLust}";
+            var fatigue = $"{Fatique}/{MaxFatique}";
+            var coins = $"{Coins}";
+            var level = $"{Level}";
+            var bodyparts = $"{string.Join($"{newline}", BodyParts)}";
+            var inventory = $"{Inventory}";
+            var location = $"{CurrentLocation}";
+
+            var baseStats =
+                $"BaseStats{newline}{health}{newline}{lust}{newline}{fatigue}{newline}{coins}{newline}{level}{newline}{bodyparts}{newline}{inventory}{newline}{location}";
+            return $"{base.ToString()}:{newline}{baseStats}";
         }
     }
 }
