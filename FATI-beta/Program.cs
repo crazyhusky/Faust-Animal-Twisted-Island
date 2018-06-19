@@ -18,7 +18,6 @@ namespace FATIbeta
         static void Main(string[] args)
         {
             GameInit();
-            //RealUI.test2();
             RunWindow();
             //RunAlavlonUI();
             GameDeInit();
