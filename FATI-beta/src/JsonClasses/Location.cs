@@ -6,10 +6,15 @@ namespace FATIbeta.JsonClasses
 {
     public class Location: MainGameObject
     {
-        protected LocationConnections[] Connections;
-        protected int UnlockLevel;
-        protected List<ItemClass> Inventory;
-        protected bool Discovered;
+        private LocationConnections[] connections;
+        private List<ItemClass> inventory;
+        private bool discovered;
+
+        public LocationConnections[] Connections { get => connections; set => connections = value; }
+        public int UnlockLevel { get; set; }
+
+        public List<ItemClass> Inventory { get => inventory; set => inventory = value; }
+        public bool Discovered { get => discovered; set => discovered = value; }
 
         public string GetLocationInDirection(string _direction)
         {
