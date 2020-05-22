@@ -1,4 +1,7 @@
 {
-    "Name":"Local Park"
-
+    "Name":"Local Park",
+    "Connections": [{
+        "Direction": "North",
+        "ConnectedLocation": "Home"
+    }]
 }
